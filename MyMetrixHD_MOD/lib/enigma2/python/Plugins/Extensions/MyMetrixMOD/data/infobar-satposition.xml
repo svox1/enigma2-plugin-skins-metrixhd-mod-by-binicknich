@@ -1,0 +1,5 @@
+<!-- /* Sat-Position -->
+    <widget source="session.CurrentService" render="Label" position="775,687" size="100,26" foregroundColor="grey" backgroundColor="background20" transparent="1" zPosition="10" font="Regular; 21" halign="center">
+      <convert type="ServiceOrbitalPosition" />
+    </widget>
+<!-- Sat-Position */ -->

@@ -1,0 +1,83 @@
+<!--* Infobar Header -->
+  <screen name="InfoBar" position="0,0" size="1280,720" backgroundColor="transparent2" flags="wfNoBorder">
+    <eLabel name="new eLabel" position="0,550" zPosition="-2" size="1280,170" backgroundColor="background20" transparent="0" />
+    <eLabel name="new eLabel" position="913,40" zPosition="-1" size="320,70" backgroundColor="background20" transparent="0" />
+    <widget source="global.CurrentTime" render="Label" position="1074,41" size="165,65" font="Regular; 55" halign="left" backgroundColor="background20" transparent="1" valign="top">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="928,50" size="125,30" font="RegularLight; 20" halign="right" backgroundColor="background20" foregroundColor="grey" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="913,75" size="140,29" font="RegularLight; 20" halign="right" backgroundColor="background20" foregroundColor="grey" transparent="1">
+      <convert type="ClockToText">Format:%e. %B</convert>
+    </widget>
+    <ePixmap pixmap="MetrixHD_MOD/icons/ico_hd_off.png" position="1159,688" size="41,20" zPosition="1" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" position="1159,688" size="41,20" zPosition="2" pixmap="MetrixHD_MOD/icons/ico_hd_on.png" alphatest="blend">
+      <convert type="ServiceInfo">VideoWidth</convert>
+      <convert type="ValueRange">721,1980</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="MetrixHD_MOD/icons/ico_dolby_off.png" position="1095,688" size="56,20" zPosition="1" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="MetrixHD_MOD/icons/ico_dolby_on.png" position="1095,688" size="56,20" zPosition="2" alphatest="blend">
+      <convert type="ServiceInfo">IsMultichannel</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="MetrixHD_MOD/icons/ico_format_off.png" position="1208,688" size="32,20" zPosition="1" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="MetrixHD_MOD/icons/ico_format_on.png" position="1208,688" size="32,20" zPosition="2" alphatest="blend">
+      <convert type="ServiceInfo">IsWidescreen</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="MetrixHD_MOD/icons/ico_txt_off.png" position="1064,688" size="23,20" zPosition="1" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="MetrixHD_MOD/icons/ico_txt_on.png" position="1064,688" size="23,20" zPosition="2" alphatest="blend">
+      <convert type="ServiceInfo">HasTelext</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="MetrixHD_MOD/icons/ico_hbbtv_off.png" position="1004,688" size="53,20" zPosition="1" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" position="1004,688" size="53,20" zPosition="2" pixmap="MetrixHD_MOD/icons/ico_hbbtv_on.png" alphatest="blend">
+      <convert type="ServiceInfo">HasHBBTV</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="MetrixHD_MOD/icons/ico_crypt_off.png" position="1248,688" size="22,20" zPosition="1" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="MetrixHD_MOD/icons/ico_crypt_on.png" position="1248,688" size="22,20" zPosition="2" alphatest="blend">
+      <convert type="ServiceInfo">IsCrypted</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="MetrixHD_MOD/icons/ico_sub_off.png" position="970,688" size="27,20" zPosition="1" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="MetrixHD_MOD/icons/ico_sub_on.png" position="970,688" size="27,20" zPosition="2" alphatest="blend">
+      <convert type="ServiceInfo">SubservicesAvailable</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.RecordState" render="Pixmap" pixmap="MetrixHD_MOD/icons/ico_rec_on.png" position="252,570" size="23,23" zPosition="2" alphatest="blend">
+      <convert type="ConditionalShowHide">Blink</convert>
+    </widget>
+    <widget source="session.CurrentService" render="XPicon" position="20,569" size="220,132" zPosition="10" backgroundColor="background20" transparent="0" alphatest="blend">
+      <convert type="ServiceName">Reference</convert>
+    </widget>
+    <widget source="session.Event_Now" render="Label" position="1081,557" size="75,26" font="Regular; 22" halign="right" backgroundColor="background20" transparent="1" valign="top">
+      <convert type="EventTime">StartTime</convert>
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <eLabel text="-" position="1161,557" size="15,26" font="Regular; 22" halign="center" backgroundColor="background" transparent="1" valign="top" />
+    <widget source="session.Event_Now" render="Label" position="1167,557" size="70,26" font="Regular; 22" halign="right" backgroundColor="background20" transparent="1" valign="top">
+      <convert type="EventTime">EndTime</convert>
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="session.Event_Now" render="Label" position="285,558" size="788,50" font="Regular; 40" halign="left" backgroundColor="background20" transparent="1" noWrap="1">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <widget source="session.Event_Now" render="Label" position="1124,582" size="113,30" font="Regular; 22" halign="right" backgroundColor="background20" transparent="1">
+      <convert type="EventTime">Remaining</convert>
+      <convert type="RemainingToText">InMinutes</convert>
+    </widget>
+    <eLabel name="new eLabel" position="288,614" size="950,1" backgroundColor="grey" foregroundColor="grey" />
+    <widget source="session.Event_Now" render="Progress" pixmap="MetrixHD_MOD/p_bar.png" position="288,613" size="950,3" zPosition="7" transparent="1">
+      <convert type="EventTime">Progress</convert>
+    </widget>
+    <widget source="session.Event_Next" render="Label" position="285,626" size="788,34" font="RegularLight; 27" halign="left" backgroundColor="background20" transparent="1" foregroundColor="grey" valign="top">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <widget source="session.Event_Next" render="Label" position="1124,621" size="113,30" font="RegularLight; 20" halign="right" backgroundColor="background20" foregroundColor="grey" transparent="1">
+      <convert type="EventTime">Duration</convert>
+      <convert type="ClockToText">InMinutes</convert>
+    </widget>
+<!-- Infobar Header *-->
