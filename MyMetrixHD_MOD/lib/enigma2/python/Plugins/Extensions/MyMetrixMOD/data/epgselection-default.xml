@@ -1,0 +1,29 @@
+<!-- ### epgselection-default START -->
+  <screen name="EPGSelection" position="0,0" size="1280,720" title="EPG Selection" flags="wfNoBorder" backgroundColor="background90">
+    <eLabel name="new eLabel" position="40,25" zPosition="-10" size="1205,650" backgroundColor="background20" transparent="0" />
+    <widget source="global.CurrentTime" render="Label" position="1120,37" size="100,28" font="Regular;26" halign="right" backgroundColor="background20" transparent="1">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="870,67" size="350,25" font="RegularLight; 22" halign="right" backgroundColor="background20" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
+    </widget>
+    <eLabel text="EPG Selection" position="70,47" size="800,43" font="Regular; 35" backgroundColor="background20" transparent="1" />
+    <widget source="Service" render="Label" position="70,105" size="700,38" font="Regular; 24" backgroundColor="background" transparent="1">
+      <convert type="ServiceName">Name</convert>
+    </widget>
+    <widget name="list" position="70,160" size="700,450" zPosition="3" itemHeight="30" scrollbarMode="showOnDemand" backgroundColor="background20" transparent="1" />
+    <widget source="Event" render="Label" position="795,153" size="430,461" font="RegularLight; 20" backgroundColor="background20" transparent="1" valign="top">
+      <convert type="EventName">ExtendedDescription</convert>
+    </widget>
+    <ePixmap pixmap="MetrixHD_MOD/buttons/key_red.png" position="70,635" size="30,40" alphatest="blend" />
+    <ePixmap pixmap="MetrixHD_MOD/buttons/key_green.png" position="252,635" size="30,40" alphatest="blend" />
+    <ePixmap pixmap="MetrixHD_MOD/buttons/key_yellow.png" position="440,635" size="30,40" alphatest="blend" />
+    <ePixmap pixmap="MetrixHD_MOD/buttons/key_blue.png" position="635,635" size="30,40" alphatest="blend" />
+    <widget name="key_red" position="105,637" size="160,25" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" transparent="1" />
+    <widget name="key_green" position="287,637" size="160,25" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" transparent="1" />
+    <widget name="key_yellow" position="475,637" size="160,25" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" transparent="1" />
+    <widget name="key_blue" position="675,637" size="160,25" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" transparent="1" />
+    <ePixmap pixmap="MetrixHD_MOD/buttons/key_menu.png" position="1140,635" size="81,40" zPosition="10" alphatest="blend" />
+    <ePixmap pixmap="MetrixHD_MOD/buttons/key_info2.png" position="1040,635" size="81,40" zPosition="10" alphatest="blend" />
+  </screen>
+<!-- ### epgselection-default END -->

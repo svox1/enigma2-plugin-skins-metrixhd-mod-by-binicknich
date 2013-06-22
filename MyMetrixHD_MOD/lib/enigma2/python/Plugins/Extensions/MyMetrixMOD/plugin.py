@@ -67,6 +67,10 @@ config.plugins.MyMetrixMOD = ConfigSubsection()
 config.plugins.MetrixWeather = ConfigSubsection()
 
 				#General
+config.plugins.MyMetrixMOD.Image = ConfigSelection(default="main-custom-openatv", choices = [
+				("main-custom-openatv", _("openATV")),
+				("main-custom-openmips", _("openMips"))
+				])
 config.plugins.MyMetrixMOD.SkinColor = ConfigSelection(default="#00149baf", choices = [
 				("#00F0A30A", _("Amber")),
 				("#00825A2C", _("Brown")),
@@ -134,13 +138,17 @@ config.plugins.MyMetrixMOD.InfobarTunerInfo = ConfigSelection(default="infobar-t
 				#ChannelSelection
 config.plugins.MyMetrixMOD.ChannelSelectionFontSize = ConfigSelection(default="channelsel-fontsize-20", choices = [
 				("channelsel-fontsize-20", _("20 Regular")),
-				("channelsel-fontsize-20thin", _("20 Thin")),
+				("channelsel-fontsize-20-thin", _("20 Thin")),
 				("channelsel-fontsize-22", _("22 Regular")),
-				("channelsel-fontsize-22thin", _("22 Thin")),
+				("channelsel-fontsize-22-thin", _("22 Thin")),
 				("channelsel-fontsize-24", _("24 Regular")),
-				("channelsel-fontsize-24thin", _("24 Thin"))
+				("channelsel-fontsize-24-thin", _("24 Thin"))
 				])
-
+config.plugins.MyMetrixMOD.EPGSelectionStyle = ConfigSelection(default="epgselection-default", choices = [
+				("epgselection-default", _("Default")),
+				("epgselection-picon", _("Picon"))
+				])
+				
 #######################################################################
 
 class MyMetrixMOD(ConfigListScreen, Screen):
@@ -175,6 +183,7 @@ class MyMetrixMOD(ConfigListScreen, Screen):
 		self.PicLoad = ePicLoad()
 		self["helperimage"] = Pixmap()
 		list = []
+		list.append(getConfigListEntry(_("MetrixImage"), config.plugins.MyMetrixMOD.Image))
 		list.append(getConfigListEntry(_("MetrixColor"), config.plugins.MyMetrixMOD.SkinColor))
 		list.append(getConfigListEntry(_("----------------------------- MetrixWeather  --------------------------------"), ))
 		list.append(getConfigListEntry(_("MetrixWeather ID"), config.plugins.MetrixWeather.woeid))
@@ -191,6 +200,9 @@ class MyMetrixMOD(ConfigListScreen, Screen):
 		list.append(getConfigListEntry(_("Show tuner info"), config.plugins.MyMetrixMOD.InfobarTunerInfo))
 		list.append(getConfigListEntry(_("---------------------------- ChannelSelection -------------------------------"), ))
 		list.append(getConfigListEntry(_("Extended Description Fontsize"), config.plugins.MyMetrixMOD.ChannelSelectionFontSize))
+		list.append(getConfigListEntry(_("---------------------------- EPGSelection -------------------------------"), ))
+		list.append(getConfigListEntry(_("EPGSelection Style"), config.plugins.MyMetrixMOD.EPGSelectionStyle))		
+		
 
 		ConfigListScreen.__init__(self, list)
 		self["actions"] = ActionMap(["OkCancelActions","DirectionActions", "InputActions", "ColorActions"], {"left": self.keyLeft,"down": self.keyDown,"up": self.keyUp,"right": self.keyRight,"red": self.exit,"yellow": self.reboot, "blue": self.showInfo, "green": self.save,"cancel": self.exit}, -1)
@@ -276,12 +288,19 @@ class MyMetrixMOD(ConfigListScreen, Screen):
 			self.appendSkinFile(self.daten + "channelsel-header.xml")
 			#FontSize
 			self.appendSkinFile(self.daten + config.plugins.MyMetrixMOD.ChannelSelectionFontSize.value + ".xml")
+			
 			#Footer
 			self.appendSkinFile(self.daten + "screen-footer.xml")
 			
+			###EPGSelection
+			self.appendSkinFile(self.daten + config.plugins.MyMetrixMOD.EPGSelectionStyle.value + ".xml")
+			
 			###Main XML
 			self.appendSkinFile(self.daten + "main.xml")
-
+			
+			###custom-main XML
+			self.appendSkinFile(self.daten + config.plugins.MyMetrixMOD.Image.value + ".xml")
+			
 			xFile = open(self.dateiTMP, "w")
 			for xx in self.skin_lines:
 				xFile.writelines(xx)
