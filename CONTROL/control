@@ -1,0 +1,9 @@
+Package: enigma2-plugin-skins-metrixhd-mod-by-binicknich
+Version: 0.9.1k
+Section: skin
+Priority: optional
+Maintainer: BiNiCKNiCH
+Architecture: mips32el
+OE: enigma2-plugin-skins-metrixhd-mod-by-binicknich
+Description: Enigma2 Skin MetrixHD_MOD by BiNiCKNiCH thanx for iMaxxx
+Source: http://www.opena.tv

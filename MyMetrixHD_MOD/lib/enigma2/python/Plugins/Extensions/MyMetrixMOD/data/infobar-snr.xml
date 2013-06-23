@@ -1,6 +1,6 @@
 <!-- /* SNR -->
-    <eLabel text="SNR:" position="1139,659" size="54,18" halign="right" font="RegularLight; 15" backgroundColor="background20" transparent="1" valign="center" />
-    <widget source="session.FrontendStatus" render="Label" position="1192,659" size="45,18" font="RegularLight; 15" backgroundColor="background20" transparent="1" halign="right" foregroundColor="grey">
-      <convert type="FrontendInfo">SNR</convert>
-    </widget>
+		<eLabel text="SNR:" position="1139,659" size="54,18" halign="right" font="RegularLight; 15" backgroundColor="background20" transparent="1" valign="center" />
+		<widget source="session.FrontendStatus" render="Label" position="1192,659" size="45,18" font="RegularLight; 15" backgroundColor="background20" transparent="1" halign="right" foregroundColor="grey">
+			<convert type="FrontendInfo">SNR</convert>
+		</widget>
 <!-- SNR */ -->

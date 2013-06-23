@@ -1,0 +1,22 @@
+#!/bin/sh
+rm -rf /usr/share/enigma2/MetrixHD_MOD
+rm -rf /usr/lib/enigma2/python/Plugins/Extensions/MyMetrixMOD
+rm -rf /usr/lib/enigma2/python/Components/Converter/ChannelCryptoInfo.py
+rm -rf /usr/lib/enigma2/python/Components/Converter/ChannelCryptoInfo.pyo
+rm -rf /usr/lib/enigma2/python/Components/Converter/MetrixCaidDisplay.py
+rm -rf /usr/lib/enigma2/python/Components/Converter/MetrixCaidDisplay.pyo
+rm -rf /usr/lib/enigma2/python/Components/Converter/MetrixExtendedServiceInfo.py
+rm -rf /usr/lib/enigma2/python/Components/Converter/MetrixExtendedServiceInfo.pyo
+rm -rf /usr/lib/enigma2/python/Components/Converter/MetrixExtraInfo.py
+rm -rf /usr/lib/enigma2/python/Components/Converter/MetrixExtraInfo.pyo
+rm -rf /usr/lib/enigma2/python/Components/Converter/MetrixRefString.py
+rm -rf /usr/lib/enigma2/python/Components/Converter/MetrixRefString.pyo
+rm -rf /usr/lib/enigma2/python/Components/Renderer/MetrixSingleEpgList.py
+rm -rf /usr/lib/enigma2/python/Components/Renderer/MetrixSingleEpgList.pyo
+rm -rf /usr/lib/enigma2/python/Components/Renderer/MetrixVolumeText.py
+rm -rf /usr/lib/enigma2/python/Components/Renderer/MetrixVolumeText.pyo
+rm -rf /usr/lib/enigma2/python/Components/Renderer/XPicon.py
+rm -rf /usr/lib/enigma2/python/Components/Renderer/XPicon.pyo
+echo "                                                          "
+echo "              ...Skin successful removed.                 "
+echo "                                                          "

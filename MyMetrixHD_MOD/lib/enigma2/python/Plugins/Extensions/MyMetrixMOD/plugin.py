@@ -1,8 +1,8 @@
-#######################################################################
+﻿#######################################################################
 #
-#    MyMetrix 
+#    MyMetrix
 #    Coded by iMaxxx (c) 2013
-#    MOD by BiNiCKNiCH
+#    MOD by BiNiCKNiCH & arn354
 #
 #
 #  This plugin is licensed under the Creative Commons
@@ -112,7 +112,7 @@ config.plugins.MyMetrixMOD.InfobarResolutionInfo = ConfigSelection(default="info
 config.plugins.MyMetrixMOD.InfobarCryptInfo = ConfigSelection(default="infobar-cryptinfo-none", choices = [
 				("infobar-cryptinfo", _("On")),
 				("infobar-cryptinfo-none", _("Off"))
-				])	
+				])
 config.plugins.MyMetrixMOD.InfobarShowChannelname = ConfigSelection(default="infobar-channelname", choices = [
 				("infobar-channelname", _("On")),
 				("infobar-channelname-none", _("Off"))
@@ -148,7 +148,10 @@ config.plugins.MyMetrixMOD.EPGSelectionStyle = ConfigSelection(default="epgselec
 				("epgselection-default", _("Default")),
 				("epgselection-picon", _("Picon"))
 				])
-				
+config.plugins.MyMetrixMOD.ButtonStyle = ConfigSelection(default="buttons-default", choices = [
+				("buttons-default", _("Default")),
+				("buttons-dark", _("Dark"))
+				])
 #######################################################################
 
 class MyMetrixMOD(ConfigListScreen, Screen):
@@ -200,15 +203,16 @@ class MyMetrixMOD(ConfigListScreen, Screen):
 		list.append(getConfigListEntry(_("Show tuner info"), config.plugins.MyMetrixMOD.InfobarTunerInfo))
 		list.append(getConfigListEntry(_("---------------------------- ChannelSelection -------------------------------"), ))
 		list.append(getConfigListEntry(_("Extended Description Fontsize"), config.plugins.MyMetrixMOD.ChannelSelectionFontSize))
-		list.append(getConfigListEntry(_("---------------------------- EPGSelection -------------------------------"), ))
-		list.append(getConfigListEntry(_("EPGSelection Style"), config.plugins.MyMetrixMOD.EPGSelectionStyle))		
-		
+		list.append(getConfigListEntry(_("------------------------------ EPGSelection ---------------------------------"), ))
+		list.append(getConfigListEntry(_("EPGSelection Style"), config.plugins.MyMetrixMOD.EPGSelectionStyle))
+		list.append(getConfigListEntry(_("------------------------------- ButtonStyle ----------------------------------"), ))
+		list.append(getConfigListEntry(_("Button Style"), config.plugins.MyMetrixMOD.ButtonStyle))
 
 		ConfigListScreen.__init__(self, list)
 		self["actions"] = ActionMap(["OkCancelActions","DirectionActions", "InputActions", "ColorActions"], {"left": self.keyLeft,"down": self.keyDown,"up": self.keyUp,"right": self.keyRight,"red": self.exit,"yellow": self.reboot, "blue": self.showInfo, "green": self.save,"cancel": self.exit}, -1)
 		self.onLayoutFinish.append(self.UpdatePicture)
 
-		
+
 	def GetPicturePath(self):
 		try:
 			returnValue = self["config"].getCurrent()[1].value
@@ -216,39 +220,39 @@ class MyMetrixMOD(ConfigListScreen, Screen):
 			return path
 		except:
 			return "/usr/lib/enigma2/python/Plugins/Extensions/MyMetrixMOD/images/metrixweather.jpg"
-		
+
 	def UpdatePicture(self):
 		self.PicLoad.PictureData.get().append(self.DecodePicture)
 		self.onLayoutFinish.append(self.ShowPicture)
-	
+
 	def ShowPicture(self):
 		self.PicLoad.setPara([self["helperimage"].instance.size().width(),self["helperimage"].instance.size().height(),self.Scale[0],self.Scale[1],0,1,"#002C2C39"])
 		self.PicLoad.startDecode(self.GetPicturePath())
-		
+
 	def DecodePicture(self, PicInfo = ""):
 		ptr = self.PicLoad.getData()
-		self["helperimage"].instance.setPixmap(ptr)	
+		self["helperimage"].instance.setPixmap(ptr)
 
-	def keyLeft(self):	
-		ConfigListScreen.keyLeft(self)	
+	def keyLeft(self):
+		ConfigListScreen.keyLeft(self)
 		self.ShowPicture()
 
 	def keyRight(self):
 		ConfigListScreen.keyRight(self)
 		self.ShowPicture()
-	
+
 	def keyDown(self):
 		self["config"].instance.moveSelection(self["config"].instance.moveDown)
 		self.ShowPicture()
-		
+
 	def keyUp(self):
 		self["config"].instance.moveSelection(self["config"].instance.moveUp)
 		self.ShowPicture()
-	
+
 	def reboot(self):
 		restartbox = self.session.openWithCallback(self.restartGUI,MessageBox,_("Do you really want to reboot now?"), MessageBox.TYPE_YESNO)
 		restartbox.setTitle(_("Restart GUI"))
-		
+
 	def showInfo(self):
 		self.session.open(MessageBox, _("Information"), MessageBox.TYPE_INFO)
 
@@ -262,7 +266,7 @@ class MyMetrixMOD(ConfigListScreen, Screen):
 		try:
 			###Header XML
 			self.appendSkinFile(self.daten + "header.xml")
-				
+
 			###InfoBar
 			self.appendSkinFile(self.daten + "infobar-header.xml")
 			#WeatherWidget
@@ -283,24 +287,24 @@ class MyMetrixMOD(ConfigListScreen, Screen):
 			self.appendSkinFile(self.daten + config.plugins.MyMetrixMOD.InfobarTunerInfo.value + ".xml")
 			#Footer
 			self.appendSkinFile(self.daten + "screen-footer.xml")
-			
+
 			###ChannelSelection
 			self.appendSkinFile(self.daten + "channelsel-header.xml")
 			#FontSize
 			self.appendSkinFile(self.daten + config.plugins.MyMetrixMOD.ChannelSelectionFontSize.value + ".xml")
-			
+
 			#Footer
 			self.appendSkinFile(self.daten + "screen-footer.xml")
-			
+
 			###EPGSelection
 			self.appendSkinFile(self.daten + config.plugins.MyMetrixMOD.EPGSelectionStyle.value + ".xml")
-			
+
 			###Main XML
 			self.appendSkinFile(self.daten + "main.xml")
-			
+
 			###custom-main XML
 			self.appendSkinFile(self.daten + config.plugins.MyMetrixMOD.Image.value + ".xml")
-			
+
 			xFile = open(self.dateiTMP, "w")
 			for xx in self.skin_lines:
 				xFile.writelines(xx)
@@ -308,10 +312,10 @@ class MyMetrixMOD(ConfigListScreen, Screen):
 			o = open(self.datei,"w")
 			for line in open(self.dateiTMP):
 				line = line.replace("#00149bae", config.plugins.MyMetrixMOD.SkinColor.value )
+				line = line.replace("buttons-default", config.plugins.MyMetrixMOD.ButtonStyle.value )
 				o.write(line)
 			o.close()
 			system('rm -rf ' + self.dateiTMP)
-
 		except:
 			self.session.open(MessageBox, _("Error creating Skin!"), MessageBox.TYPE_ERROR)
 
@@ -322,7 +326,7 @@ class MyMetrixMOD(ConfigListScreen, Screen):
 	def appendSkinFile(self,appendFileName):
 		skFile = open(appendFileName, "r")
 		file_lines = skFile.readlines()
-		skFile.close()	
+		skFile.close()
 		for x in file_lines:
 			self.skin_lines.append(x)
 

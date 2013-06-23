@@ -1,5 +1,5 @@
 <!-- /* ECM-Info -->
 	<widget source="session.CurrentService" render="Label" font="Regular; 15" position="286,664" size="846,18" halign="left" valign="center" zPosition="50" backgroundColor="background20" foregroundColor="white" transparent="1" noWrap="1">
-	  <convert type="MetrixCaidDisplay">Default</convert>
+		<convert type="MetrixCaidDisplay">Default</convert>
 	</widget>
 <!-- ECM-Info */ -->
