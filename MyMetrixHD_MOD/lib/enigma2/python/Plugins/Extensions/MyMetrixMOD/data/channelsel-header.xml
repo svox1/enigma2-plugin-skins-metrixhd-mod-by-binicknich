@@ -23,10 +23,10 @@
 		</widget>
 		<ePixmap pixmap="MetrixHD_MOD/buttons-default/key_menu.png" position="639,635" size="81,40" alphatest="blend" />
 		<ePixmap pixmap="MetrixHD_MOD/buttons-default/key_info2.png" position="549,635" size="81,40" alphatest="blend" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons-default/red.png" position="17,635" size="30,40" alphatest="blend" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons-default/green.png" position="137,635" size="30,40" alphatest="blend" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons-default/yellow.png" position="272,635" size="30,40" alphatest="blend" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons-default/blue.png" position="407,635" size="30,40" alphatest="blend" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons-default/key_red.png" position="17,635" size="30,40" alphatest="blend" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons-default/key_green.png" position="137,635" size="30,40" alphatest="blend" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons-default/key_yellow.png" position="272,635" size="30,40" alphatest="blend" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons-default/key_blue.png" position="407,635" size="30,40" alphatest="blend" />
 		<widget name="key_red" position="57,645" size="90,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" transparent="1" />
 		<widget name="key_green" position="177,644" size="90,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" transparent="1" />
 		<widget name="key_yellow" position="312,644" size="90,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" transparent="1" />
