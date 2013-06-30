@@ -1,4 +1,4 @@
-﻿#######################################################################
+#######################################################################
 #
 #    MyMetrix
 #    Coded by iMaxxx (c) 2013
@@ -149,7 +149,7 @@ config.plugins.MyMetrixMOD.EPGSelectionStyle = ConfigSelection(default="epgselec
 				("epgselection-picon", _("Picon"))
 				])
 config.plugins.MyMetrixMOD.ButtonStyle = ConfigSelection(default="buttons-default", choices = [
-				("buttons-default", _("Default")),
+				("buttons-light", _("Light")),
 				("buttons-dark", _("Dark"))
 				])
 #######################################################################
@@ -312,7 +312,7 @@ class MyMetrixMOD(ConfigListScreen, Screen):
 			o = open(self.datei,"w")
 			for line in open(self.dateiTMP):
 				line = line.replace("#00149bae", config.plugins.MyMetrixMOD.SkinColor.value )
-				line = line.replace("buttons-default", config.plugins.MyMetrixMOD.ButtonStyle.value )
+				line = line.replace("buttons-light", config.plugins.MyMetrixMOD.ButtonStyle.value )
 				o.write(line)
 			o.close()
 			system('rm -rf ' + self.dateiTMP)

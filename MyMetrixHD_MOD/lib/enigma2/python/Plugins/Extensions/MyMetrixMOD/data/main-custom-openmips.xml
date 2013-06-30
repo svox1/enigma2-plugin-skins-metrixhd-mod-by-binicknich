@@ -32,8 +32,8 @@
 		<widget font="Regular;18" halign="left" name="temp" position="70,410" size="530,25" valign="center" transparent="1" foregroundColor="white" backgroundColor="background20" />
 		<widget source="Title" render="Label" position="70,47" size="800,43" font="Regular;35" backgroundColor="background20" transparent="1" />
 		<widget name="config" position="70,115" size="700,510" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background20" transparent="1" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons-default/key_red.png" position=" 70,635" size="30,40" alphatest="blend" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons-default/key_blue.png" position="940,635" size="30,40" alphatest="blend" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons/key_red.png" position=" 70,635" size="30,40" alphatest="blend" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons/key_blue.png" position="940,635" size="30,40" alphatest="blend" />
 		<widget name="key_red" position="105,637" size="240,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" foregroundColor="white" transparent="1" />
 		<widget name="key_blue" position="975,637" size="260,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" foregroundColor="white" transparent="1" />
 	</screen>
@@ -49,9 +49,9 @@
 		</widget>
 		<widget name="menu" position="70,120" size="700,371" font="Regular;20" zPosition="3" itemHeight="24" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" foregroundColorSelected="white" />
 		<widget name="lab1" zPosition="2" position="126,129" size="600,40" font="Regular;22" halign="center" transparent="1" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons-default/key_red.png" position=" 70,635" size="30,40" alphatest="blend" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons-default/key_green.png" position="360,635" size="30,40" alphatest="blend" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons-default/key_blue.png" position="940,635" size="30,40" alphatest="blend" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons/key_red.png" position=" 70,635" size="30,40" alphatest="blend" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons/key_green.png" position="360,635" size="30,40" alphatest="blend" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons/key_blue.png" position="940,635" size="30,40" alphatest="blend" />
 		<widget name="key_red" position="105,637" size="240,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" foregroundColor="white" transparent="1" />
 		<widget name="key_green" position="395,637" size="240,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" foregroundColor="white" transparent="1" />
 		<widget name="key_blue" position="975,637" size="260,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" foregroundColor="white" transparent="1" />
@@ -69,10 +69,10 @@
 		<widget source="menu" render="Listbox" position="70,120" size="700,371" font="Regular;20" zPosition="3" itemHeight="60" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" foregroundColorSelected="white" >
 			<convert type="TemplatedMultiContent">{"template": [MultiContentEntryPixmapAlphaTest(pos = (5, 0), size = (48, 48), png = 0),MultiContentEntryText(pos = (65, 10), size = (330, 38), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),MultiContentEntryText(pos = (405, 10), size = (125, 38), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 2),],"fonts": [gFont("Regular", 22)],"itemHeight": 50}</convert>
 		</widget>
-		<ePixmap pixmap="MetrixHD_MOD/buttons-default/key_red.png" position=" 70,635" size="30,40" alphatest="blend" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons-default/key_green.png" position="360,635" size="30,40" alphatest="blend" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons-default/key_yellow.png" position="650,635" size="30,40" alphatest="blend" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons-default/key_blue.png" position="940,635" size="30,40" alphatest="blend" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons/key_red.png" position=" 70,635" size="30,40" alphatest="blend" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons/key_green.png" position="360,635" size="30,40" alphatest="blend" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons/key_yellow.png" position="650,635" size="30,40" alphatest="blend" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons/key_blue.png" position="940,635" size="30,40" alphatest="blend" />
 		<widget name="key_red" position="105,637" size="240,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" foregroundColor="white" transparent="1" />
 		<widget name="key_green" position="395,637" size="240,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" foregroundColor="white" transparent="1" />
 		<widget name="key_yellow" position="685,637" size="240,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" foregroundColor="white" transparent="1" />
@@ -91,8 +91,8 @@
 		<widget source="menu" render="Listbox" position="70,80" size="780,400" scrollbarMode="showOnDemand" selectionPixmap="MetrixHD_MOD/p_bar.png" transparent="1" backgroundColorSelected="background20" foregroundColorSelected="white">
 			<convert type="TemplatedMultiContent">{"template": [MultiContentEntryPixmapAlphaTest(pos = (5, 0), size = (48, 48), png = 0),MultiContentEntryText(pos = (65, 3), size = (190, 38), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),MultiContentEntryText(pos = (165, 27), size = (290, 38), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 2),],"fonts": [gFont("Regular", 22), gFont("Regular", 18)],"itemHeight": 50}</convert>
 		</widget>
-		<ePixmap pixmap="MetrixHD_MOD/buttons-default/key_red.png" position=" 70,635" size="30,40" alphatest="blend" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons-default/key_blue.png" position="940,635" size="30,40" alphatest="blend" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons/key_red.png" position=" 70,635" size="30,40" alphatest="blend" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons/key_blue.png" position="940,635" size="30,40" alphatest="blend" />
 		<widget name="key_red" position="105,637" size="240,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" foregroundColor="white" transparent="1" />
 		<widget name="key_blue" position="975,637" size="260,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" foregroundColor="white" transparent="1" />
 	</screen>
@@ -110,10 +110,10 @@
 		<widget source="menu" render="Listbox" position="70,180" size="700,371" font="Regular;20" zPosition="3" itemHeight="60" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" foregroundColorSelected="white" >
 			<convert type="TemplatedMultiContent">{"template": [MultiContentEntryPixmapAlphaTest(pos = (5, 0), size = (48, 48), png = 0),MultiContentEntryText(pos = (65, 10), size = (330, 38), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),MultiContentEntryText(pos = (405, 10), size = (125, 38), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 2),],"fonts": [gFont("Regular", 22)],"itemHeight": 50}</convert>
 		</widget>
-		<ePixmap pixmap="MetrixHD_MOD/buttons-default/key_red.png" position=" 70,635" size="30,40" alphatest="blend" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons-default/key_green.png" position="360,635" size="30,40" alphatest="blend" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons-default/key_yellow.png" position="650,635" size="30,40" alphatest="blend" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons-default/key_blue.png" position="940,635" size="30,40" alphatest="blend" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons/key_red.png" position=" 70,635" size="30,40" alphatest="blend" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons/key_green.png" position="360,635" size="30,40" alphatest="blend" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons/key_yellow.png" position="650,635" size="30,40" alphatest="blend" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons/key_blue.png" position="940,635" size="30,40" alphatest="blend" />
 		<widget name="key_red" position="105,637" size="240,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" foregroundColor="white" transparent="1" />
 		<widget name="key_green" position="395,637" size="240,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" foregroundColor="white" transparent="1" />
 		<widget name="key_yellow" position="685,637" size="240,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" foregroundColor="white" transparent="1" />

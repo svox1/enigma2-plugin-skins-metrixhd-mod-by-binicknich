@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MyMetrixMOD v1.1b\n"
-"POT-Creation-Date: 2013-06-04 21:29+0100\n"
-"PO-Revision-Date: 2013-06-04 21:32+0100\n"
+"POT-Creation-Date: 2013-06-30 03:52+0100\n"
+"PO-Revision-Date: 2013-06-30 03:52+0100\n"
 "Last-Translator: iMaxxx <none@ima.xxx>\n"
 "Language-Team: iMaxxx, MOD by BiNiCKNiCH <none@ima.xxx>\n"
 "Language: de\n"
@@ -12,228 +12,348 @@ msgstr ""
 "X-Generator: Poedit 1.5.5\n"
 "X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
 
-#: D:\Programme\09 Development\eclipse\workspace\MyMetrixMOD/plugin.py:71
+#: D:\Arbeitsverzeichnis\Gigablue Skin
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:71
+msgid "openATV"
+msgstr ""
+
+#: D:\Arbeitsverzeichnis\Gigablue Skin
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:72
+msgid "openMips"
+msgstr ""
+
+#: D:\Arbeitsverzeichnis\Gigablue Skin
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:75
 msgid "Amber"
 msgstr ""
 
-#: D:\Programme\09 Development\eclipse\workspace\MyMetrixMOD/plugin.py:72
+#: D:\Arbeitsverzeichnis\Gigablue Skin
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:76
 msgid "Brown"
 msgstr ""
 
-#: D:\Programme\09 Development\eclipse\workspace\MyMetrixMOD/plugin.py:73
+#: D:\Arbeitsverzeichnis\Gigablue Skin
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:77
 msgid "Cobalt"
 msgstr ""
 
-#: D:\Programme\09 Development\eclipse\workspace\MyMetrixMOD/plugin.py:74
+#: D:\Arbeitsverzeichnis\Gigablue Skin
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:78
 msgid "Crimson"
 msgstr ""
 
-#: D:\Programme\09 Development\eclipse\workspace\MyMetrixMOD/plugin.py:75
+#: D:\Arbeitsverzeichnis\Gigablue Skin
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:79
 msgid "Cyan"
 msgstr ""
 
-#: D:\Programme\09 Development\eclipse\workspace\MyMetrixMOD/plugin.py:76
+#: D:\Arbeitsverzeichnis\Gigablue Skin
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:80
 msgid "Magenta"
 msgstr ""
 
-#: D:\Programme\09 Development\eclipse\workspace\MyMetrixMOD/plugin.py:77
+#: D:\Arbeitsverzeichnis\Gigablue Skin
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:81
 msgid "Lime"
 msgstr ""
 
-#: D:\Programme\09 Development\eclipse\workspace\MyMetrixMOD/plugin.py:78
+#: D:\Arbeitsverzeichnis\Gigablue Skin
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:82
 msgid "Indigo"
 msgstr ""
 
-#: D:\Programme\09 Development\eclipse\workspace\MyMetrixMOD/plugin.py:79
+#: D:\Arbeitsverzeichnis\Gigablue Skin
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:83
 msgid "Green"
 msgstr ""
 
-#: D:\Programme\09 Development\eclipse\workspace\MyMetrixMOD/plugin.py:80
+#: D:\Arbeitsverzeichnis\Gigablue Skin
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:84
 msgid "Emerald"
 msgstr ""
 
-#: D:\Programme\09 Development\eclipse\workspace\MyMetrixMOD/plugin.py:81
+#: D:\Arbeitsverzeichnis\Gigablue Skin
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:85
 msgid "Mauve"
 msgstr ""
 
-#: D:\Programme\09 Development\eclipse\workspace\MyMetrixMOD/plugin.py:82
+#: D:\Arbeitsverzeichnis\Gigablue Skin
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:86
 msgid "Olive"
 msgstr ""
 
-#: D:\Programme\09 Development\eclipse\workspace\MyMetrixMOD/plugin.py:83
+#: D:\Arbeitsverzeichnis\Gigablue Skin
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:87
 msgid "Orange"
 msgstr ""
 
-#: D:\Programme\09 Development\eclipse\workspace\MyMetrixMOD/plugin.py:84
+#: D:\Arbeitsverzeichnis\Gigablue Skin
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:88
 msgid "Pink"
 msgstr ""
 
-#: D:\Programme\09 Development\eclipse\workspace\MyMetrixMOD/plugin.py:85
+#: D:\Arbeitsverzeichnis\Gigablue Skin
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:89
 msgid "Red"
 msgstr ""
 
-#: D:\Programme\09 Development\eclipse\workspace\MyMetrixMOD/plugin.py:86
+#: D:\Arbeitsverzeichnis\Gigablue Skin
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:90
 msgid "Sienna"
 msgstr ""
 
-#: D:\Programme\09 Development\eclipse\workspace\MyMetrixMOD/plugin.py:87
+#: D:\Arbeitsverzeichnis\Gigablue Skin
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:91
 msgid "Steel"
 msgstr ""
 
-#: D:\Programme\09 Development\eclipse\workspace\MyMetrixMOD/plugin.py:88
+#: D:\Arbeitsverzeichnis\Gigablue Skin
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:92
 msgid "Teal"
 msgstr ""
 
-#: D:\Programme\09 Development\eclipse\workspace\MyMetrixMOD/plugin.py:89
+#: D:\Arbeitsverzeichnis\Gigablue Skin
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:93
 msgid "Violet"
 msgstr ""
 
-#: D:\Programme\09 Development\eclipse\workspace\MyMetrixMOD/plugin.py:90
+#: D:\Arbeitsverzeichnis\Gigablue Skin
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:94
 msgid "Yellow"
 msgstr ""
 
-#: D:\Programme\09 Development\eclipse\workspace\MyMetrixMOD/plugin.py:96
+#: D:\Arbeitsverzeichnis\Gigablue Skin
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:100
 msgid "Celsius"
 msgstr ""
 
-#: D:\Programme\09 Development\eclipse\workspace\MyMetrixMOD/plugin.py:97
+#: D:\Arbeitsverzeichnis\Gigablue Skin
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:101
 msgid "Fahrenheit"
 msgstr ""
 
-#: D:\Programme\09 Development\eclipse\workspace\MyMetrixMOD/plugin.py:101
-#: Development\eclipse\workspace\MyMetrixMOD/plugin.py:105
-#: Development\eclipse\workspace\MyMetrixMOD/plugin.py:109
-#: Development\eclipse\workspace\MyMetrixMOD/plugin.py:113
-#: Development\eclipse\workspace\MyMetrixMOD/plugin.py:117
-#: Development\eclipse\workspace\MyMetrixMOD/plugin.py:121
-#: Development\eclipse\workspace\MyMetrixMOD/plugin.py:125
+#: D:\Arbeitsverzeichnis\Gigablue Skin
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:105
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:109
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:113
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:117
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:121
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:125
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:129
 msgid "On"
 msgstr "An"
 
-#: D:\Programme\09 Development\eclipse\workspace\MyMetrixMOD/plugin.py:102
-#: Development\eclipse\workspace\MyMetrixMOD/plugin.py:106
-#: Development\eclipse\workspace\MyMetrixMOD/plugin.py:110
-#: Development\eclipse\workspace\MyMetrixMOD/plugin.py:114
-#: Development\eclipse\workspace\MyMetrixMOD/plugin.py:118
-#: Development\eclipse\workspace\MyMetrixMOD/plugin.py:122
-#: Development\eclipse\workspace\MyMetrixMOD/plugin.py:126
-#: Development\eclipse\workspace\MyMetrixMOD/plugin.py:129
+#: D:\Arbeitsverzeichnis\Gigablue Skin
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:106
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:110
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:114
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:118
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:122
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:126
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:130
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:133
 msgid "Off"
 msgstr "Aus"
 
-#: D:\Programme\09 Development\eclipse\workspace\MyMetrixMOD/plugin.py:130
+#: D:\Arbeitsverzeichnis\Gigablue Skin
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:134
 msgid "2 Tuner"
 msgstr ""
 
-#: D:\Programme\09 Development\eclipse\workspace\MyMetrixMOD/plugin.py:131
+#: D:\Arbeitsverzeichnis\Gigablue Skin
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:135
 msgid "3 Tuner"
 msgstr ""
 
-#: D:\Programme\09 Development\eclipse\workspace\MyMetrixMOD/plugin.py:132
+#: D:\Arbeitsverzeichnis\Gigablue Skin
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:136
 msgid "4 Tuner"
 msgstr ""
 
-#: D:\Programme\09 Development\eclipse\workspace\MyMetrixMOD/plugin.py:136
+#: D:\Arbeitsverzeichnis\Gigablue Skin
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:140
 msgid "20 Regular"
 msgstr ""
 
-#: D:\Programme\09 Development\eclipse\workspace\MyMetrixMOD/plugin.py:137
+#: D:\Arbeitsverzeichnis\Gigablue Skin
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:141
 msgid "20 Thin"
 msgstr ""
 
-#: D:\Programme\09 Development\eclipse\workspace\MyMetrixMOD/plugin.py:138
+#: D:\Arbeitsverzeichnis\Gigablue Skin
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:142
 msgid "22 Regular"
 msgstr ""
 
-#: D:\Programme\09 Development\eclipse\workspace\MyMetrixMOD/plugin.py:139
+#: D:\Arbeitsverzeichnis\Gigablue Skin
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:143
 msgid "22 Thin"
 msgstr ""
 
-#: D:\Programme\09 Development\eclipse\workspace\MyMetrixMOD/plugin.py:176
+#: D:\Arbeitsverzeichnis\Gigablue Skin
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:144
+msgid "24 Regular"
+msgstr ""
+
+#: D:\Arbeitsverzeichnis\Gigablue Skin
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:145
+msgid "24 Thin"
+msgstr ""
+
+#: D:\Arbeitsverzeichnis\Gigablue Skin
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:148
+msgid "Default"
+msgstr "Standard"
+
+#: D:\Arbeitsverzeichnis\Gigablue Skin
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:149
+msgid "Picon"
+msgstr ""
+
+#: D:\Arbeitsverzeichnis\Gigablue Skin
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:152
+msgid "Light"
+msgstr "Hell"
+
+#: D:\Arbeitsverzeichnis\Gigablue Skin
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:153
+msgid "Dark"
+msgstr "Dunkel"
+
+#: D:\Arbeitsverzeichnis\Gigablue Skin
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:189
+msgid "MetrixImage"
+msgstr ""
+
+#: D:\Arbeitsverzeichnis\Gigablue Skin
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:190
 msgid "MetrixColor"
 msgstr ""
 
-#: D:\Programme\09 Development\eclipse\workspace\MyMetrixMOD/plugin.py:177
+#: D:\Arbeitsverzeichnis\Gigablue Skin
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:191
 msgid ""
 "----------------------------- MetrixWeather  --------------------------------"
 msgstr ""
 
-#: D:\Programme\09 Development\eclipse\workspace\MyMetrixMOD/plugin.py:178
+#: D:\Arbeitsverzeichnis\Gigablue Skin
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:192
 msgid "MetrixWeather ID"
 msgstr ""
 
-#: D:\Programme\09 Development\eclipse\workspace\MyMetrixMOD/plugin.py:179
+#: D:\Arbeitsverzeichnis\Gigablue Skin
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:193
 msgid "Unit"
 msgstr "Einheit"
 
-#: D:\Programme\09 Development\eclipse\workspace\MyMetrixMOD/plugin.py:180
+#: D:\Arbeitsverzeichnis\Gigablue Skin
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:194
 msgid "Refresh Interval (min)"
 msgstr "Aktualisierungsintervall (Min.)"
 
-#: D:\Programme\09 Development\eclipse\workspace\MyMetrixMOD/plugin.py:181
+#: D:\Arbeitsverzeichnis\Gigablue Skin
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:195
 msgid ""
 "-------------------------------- InfoBar ------------------------------------"
 msgstr ""
 
-#: D:\Programme\09 Development\eclipse\workspace\MyMetrixMOD/plugin.py:182
+#: D:\Arbeitsverzeichnis\Gigablue Skin
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:196
 msgid "Weather Widget"
 msgstr "Wetter Widget"
 
-#: D:\Programme\09 Development\eclipse\workspace\MyMetrixMOD/plugin.py:183
+#: D:\Arbeitsverzeichnis\Gigablue Skin
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:197
 msgid "Channel name"
 msgstr "Sendername"
 
-#: D:\Programme\09 Development\eclipse\workspace\MyMetrixMOD/plugin.py:184
+#: D:\Arbeitsverzeichnis\Gigablue Skin
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:198
 msgid "Show resolution info"
 msgstr "Auflösung"
 
-#: D:\Programme\09 Development\eclipse\workspace\MyMetrixMOD/plugin.py:185
+#: D:\Arbeitsverzeichnis\Gigablue Skin
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:199
 msgid "Show crypt info"
 msgstr "Verschlüsselung"
 
-#: D:\Programme\09 Development\eclipse\workspace\MyMetrixMOD/plugin.py:186
+#: D:\Arbeitsverzeichnis\Gigablue Skin
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:200
 msgid "Show ECM info"
 msgstr "ECM-Info"
 
-#: D:\Programme\09 Development\eclipse\workspace\MyMetrixMOD/plugin.py:187
+#: D:\Arbeitsverzeichnis\Gigablue Skin
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:201
 msgid "Show Sat Position"
 msgstr "Satelliten-Position"
 
-#: D:\Programme\09 Development\eclipse\workspace\MyMetrixMOD/plugin.py:188
+#: D:\Arbeitsverzeichnis\Gigablue Skin
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:202
 msgid "Show SNR"
 msgstr "SNR"
 
-#: D:\Programme\09 Development\eclipse\workspace\MyMetrixMOD/plugin.py:189
+#: D:\Arbeitsverzeichnis\Gigablue Skin
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:203
 msgid "Show tuner info"
 msgstr "Tunerinfo"
 
-#: D:\Programme\09 Development\eclipse\workspace\MyMetrixMOD/plugin.py:190
+#: D:\Arbeitsverzeichnis\Gigablue Skin
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:204
 msgid ""
 "---------------------------- ChannelSelection -------------------------------"
 msgstr ""
 
-#: D:\Programme\09 Development\eclipse\workspace\MyMetrixMOD/plugin.py:191
+#: D:\Arbeitsverzeichnis\Gigablue Skin
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:205
 msgid "Extended Description Fontsize"
 msgstr "Schriftgröße der Sendungsinformationen"
 
-#: D:\Programme\09 Development\eclipse\workspace\MyMetrixMOD/plugin.py:235
+#: D:\Arbeitsverzeichnis\Gigablue Skin
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:206
+msgid ""
+"------------------------------ EPGSelection ---------------------------------"
+msgstr ""
+
+#: D:\Arbeitsverzeichnis\Gigablue Skin
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:207
+msgid "EPGSelection Style"
+msgstr "EPG Selection Stil"
+
+#: D:\Arbeitsverzeichnis\Gigablue Skin
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:208
+msgid ""
+"------------------------------- ButtonStyle "
+"----------------------------------"
+msgstr ""
+
+#: D:\Arbeitsverzeichnis\Gigablue Skin
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:209
+msgid "Button Style"
+msgstr "Button Stil"
+
+#: D:\Arbeitsverzeichnis\Gigablue Skin
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:253
 msgid "Do you really want to reboot now?"
 msgstr "Wollen Sie wirklich neustarten?"
 
-#: D:\Programme\09 Development\eclipse\workspace\MyMetrixMOD/plugin.py:236
-#: Development\eclipse\workspace\MyMetrixMOD/plugin.py:299
+#: D:\Arbeitsverzeichnis\Gigablue Skin
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:254
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:324
 msgid "Restart GUI"
 msgstr "GUI neustarten"
 
-#: D:\Programme\09 Development\eclipse\workspace\MyMetrixMOD/plugin.py:239
+#: D:\Arbeitsverzeichnis\Gigablue Skin
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:257
 msgid "Information"
 msgstr "Information"
 
-#: D:\Programme\09 Development\eclipse\workspace\MyMetrixMOD/plugin.py:295
+#: D:\Arbeitsverzeichnis\Gigablue Skin
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:320
 msgid "Error creating Skin!"
 msgstr "Fehler beim Erstellen des Skins!"
 
-#: D:\Programme\09 Development\eclipse\workspace\MyMetrixMOD/plugin.py:298
+#: D:\Arbeitsverzeichnis\Gigablue Skin
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:323
 msgid ""
 "GUI needs a restart to apply a new skin.\n"
 "Do you want to Restart the GUI now?"
@@ -242,33 +362,7 @@ msgstr ""
 "\n"
 "Nach der Ersteinrichtung <MetrixHD_MOD> im Skin-Menü aktivieren!"
 
-#: D:\Programme\09 Development\eclipse\workspace\MyMetrixMOD/plugin.py:329
+#: D:\Arbeitsverzeichnis\Gigablue Skin
+#: Project\GIT\MetrixHD-MOD\enigma2-plugin-skins-metrixhd-mod-by-binicknich\MyMetrixHD_MOD\lib\enigma2\python\Plugins\Extensions\MyMetrixMOD/plugin.py:354
 msgid "Configuration tool for MetrixHD_MOD"
 msgstr "Konfigurationstool für MetrixHD_MOD"
-
-#~ msgid "Update available, save to apply!"
-#~ msgstr "Update verfügbar, speichern zum Übernehmen!"
-
-#~ msgid "Update available, please reboot first to apply the update!"
-#~ msgstr "Update verfügbar. Bitte zuerst Neustarten!"
-
-#~ msgid "On with symbol"
-#~ msgstr "An mit Symbol"
-
-#~ msgid "Classic"
-#~ msgstr "Classic"
-
-#~ msgid "Colored"
-#~ msgstr "Farbig"
-
-#~ msgid "Show Provider"
-#~ msgstr "Anbieter anzeigen"
-
-#~ msgid "Name"
-#~ msgstr "Name"
-
-#~ msgid "Name and number"
-#~ msgstr "Name und Nummer"
-
-#~ msgid "New"
-#~ msgstr "New"
