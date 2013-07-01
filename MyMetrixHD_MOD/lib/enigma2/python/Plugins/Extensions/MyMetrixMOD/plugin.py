@@ -148,9 +148,10 @@ config.plugins.MyMetrixMOD.EPGSelectionStyle = ConfigSelection(default="epgselec
 				("epgselection-default", _("Default")),
 				("epgselection-picon", _("Picon"))
 				])
-config.plugins.MyMetrixMOD.ButtonStyle = ConfigSelection(default="buttons-default", choices = [
+config.plugins.MyMetrixMOD.ButtonStyle = ConfigSelection(default="buttons-light", choices = [
 				("buttons-light", _("Light")),
-				("buttons-dark", _("Dark"))
+				("buttons-dark", _("Dark")),
+				("buttons-darktrans", _("Dark Transparent"))
 				])
 #######################################################################
 
@@ -161,7 +162,7 @@ class MyMetrixMOD(ConfigListScreen, Screen):
     <eLabel font="Regular; 20" foregroundColor="unffffff" backgroundColor="#20000000" halign="left" position="77,645" size="250,33" text="Cancel" transparent="1" />
     <eLabel font="Regular; 20" foregroundColor="unffffff" backgroundColor="#20000000" halign="left" position="375,645" size="250,33" text="Save" transparent="1" />
     <eLabel font="Regular; 20" foregroundColor="unffffff" backgroundColor="#20000000" halign="left" position="682,645" size="250,33" text="Reboot" transparent="1" />
-    <widget name="config" position="61,107" scrollbarMode="showOnDemand" size="590,506" transparent="1" />
+    <widget name="config" position="61,114" size="590,500" scrollbarMode="showOnDemand" transparent="1" />
     <eLabel position="60,55" size="348,50" text="MyMetrixMOD" font="Regular; 40" valign="center" transparent="1" backgroundColor="#20000000" />
     <eLabel position="343,58" size="349,50" text="Setup" foregroundColor="unffffff" font="Regular; 30" valign="center" backgroundColor="#20000000" transparent="1" halign="left" />
     <eLabel position="665,640" size="5,40" backgroundColor="#e5dd00" />

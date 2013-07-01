@@ -1,4 +1,4 @@
-<!-- ### main-custom-openatv START -->
+<!-- /* main-custom-openatv -->
 	<screen name="HddMount" position="0,0" size="1280,720" title="HddMount" flags="wfNoBorder" backgroundColor="background90">
 		<eLabel name="new eLabel" position="40,25" zPosition="-10" size="1205,650" backgroundColor="background20" transparent="0" />
 		<eLabel text="Mount Manager" position="70,47" size="800,43" font="Regular;35" backgroundColor="background20" transparent="1" />
@@ -62,5 +62,5 @@
 		<eLabel name="new eLabel" position="950,348" zPosition="-11" size="270,50" backgroundColor="background20" />
 		<eLabel name="new eLabel" position="950,423" zPosition="-11" size="270,157" backgroundColor="background20" />
 	</screen>
-<!-- ### main-custom-openatv END -->
+<!-- main-custom-openatv */ -->
 </skin>

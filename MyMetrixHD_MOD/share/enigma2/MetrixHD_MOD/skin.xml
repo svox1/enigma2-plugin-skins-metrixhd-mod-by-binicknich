@@ -2,7 +2,7 @@
 	<!-- MetrixHD by iMaxxx for VTI v5.0.xxx -->
 	<!-- recommended to use only with XPicons (transparent light) -->
 	<!-- You can modify and redistribute it as long as you keep this License for the skin and all of your modifications -->
-	<!-- MOD v0.9.3 by BiNiCKNiCH & arn354 -->
+	<!-- MOD v0.9.4 by BiNiCKNiCH & arn354 -->
 	<!-- THX Area51 & IPMAN from et-view-support.com / ckone & blzr from openpli.org -->
 	<output id="0">
 		<resolution xres="1280" yres="720" bpp="32" />
@@ -28,38 +28,7 @@
 		<color name="metrixPreTrans" value="#ccffffff" />
 		<color name="metrixPreTrans2" value="#dfffffff" />
 		<color name="metrixPreTrans3" value="#bbffffff" />
-		<color name="metrixPreTrans4" value="#80ffffff" />
-		<color name="metrixSelection" value="#00149baf" />
-		<color name="metrixYellow" value="#00ffff00" />
-		<color name="orange" value="#00f47d19" />
-		<color name="rds_text_bg" value="#00003258" />
-		<color name="red" value="#00f23d21" />
-		<color name="transparent" value="#ffffffff" />
-		<color name="transparent2" value="#ff000000" />
-		<color name="transpBlack" value="#80000000" />
-		<color name="transpWhite" value="#77ffffff" />
-		<color name="transpyellow" value="#33bab329" />
-		<color name="un18080911" value="#18080911" />
-		<color name="un444444" value="#00444444" />
-		<color name="un777777" value="#00777777" />
-		<color name="un800000" value="#00800000" />
-		<color name="un808080" value="#00808080" />
-		<color name="un808888" value="#00808888" />
-		<color name="unc6e0f3" value="#00c6e0f3" />
-		<color name="unc8eaff" value="#00c8eaff" />
-		<color name="undcaaaa" value="#00dcaaaa" />
-		<color name="undcdcdc" value="#00dcdcdc" />
-		<color name="undddddd" value="#00dddddd" />
-		<color name="unf0b400" value="#00f0b400" />
-		<color name="unfcc000" value="#00fcc000" />
-		<color name="unff0000" value="#00ff0000" />
-		<color name="unff000000" value="#ff000000" />
-		<color name="unffffff" value="#00ffffff" />
-		<color name="white" value="#00fefefe" />
-		<color name="yellow" value="#00e5b243" />
-	</colors>
-	<fonts>
-		<font filename="/usr/share/fonts/lcd.ttf" name="LCD" scale="100" />
+		<color name="metri" />
 		<font filename="/usr/share/fonts/ae_AlMateen.ttf" name="Replacement" scale="100" replacement="1" />
 		<font filename="/usr/share/fonts/tuxtxt.ttf" name="Console" scale="100" />
 		<font filename="/usr/share/fonts/nmsbd.ttf" name="Arial" scale="100" />
@@ -122,7 +91,38 @@
 		<widget source="global.CurrentTime" render="Label" position="928,50" size="125,30" font="RegularLight; 20" halign="right" backgroundColor="background20" foregroundColor="grey" transparent="1">
 			<convert type="ClockToText">Format:%A</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="913,75" size="140,29" font="RegularLight; 20" halign="right" backgroundColor="background20" foregroundColor="grey" transparent="1">
+		<widget source="global.CurrentTime" renderxPreTrans4" value="#80ffffff" />
+		<color name="metrixSelection" value="#00149baf" />
+		<color name="metrixYellow" value="#00ffff00" />
+		<color name="orange" value="#00f47d19" />
+		<color name="rds_text_bg" value="#00003258" />
+		<color name="red" value="#00f23d21" />
+		<color name="transparent" value="#ffffffff" />
+		<color name="transparent2" value="#ff000000" />
+		<color name="transpBlack" value="#80000000" />
+		<color name="transpWhite" value="#77ffffff" />
+		<color name="transpyellow" value="#33bab329" />
+		<color name="un18080911" value="#18080911" />
+		<color name="un444444" value="#00444444" />
+		<color name="un777777" value="#00777777" />
+		<color name="un800000" value="#00800000" />
+		<color name="un808080" value="#00808080" />
+		<color name="un808888" value="#00808888" />
+		<color name="unc6e0f3" value="#00c6e0f3" />
+		<color name="unc8eaff" value="#00c8eaff" />
+		<color name="undcaaaa" value="#00dcaaaa" />
+		<color name="undcdcdc" value="#00dcdcdc" />
+		<color name="undddddd" value="#00dddddd" />
+		<color name="unf0b400" value="#00f0b400" />
+		<color name="unfcc000" value="#00fcc000" />
+		<color name="unff0000" value="#00ff0000" />
+		<color name="unff000000" value="#ff000000" />
+		<color name="unffffff" value="#00ffffff" />
+		<color name="white" value="#00fefefe" />
+		<color name="yellow" value="#00e5b243" />
+	</colors>
+	<fonts>
+		<font filename="/usr/share/fonts/lcd.ttf" name="LCD" scale="100="Label" position="913,75" size="140,29" font="RegularLight; 20" halign="right" backgroundColor="background20" foregroundColor="grey" transparent="1">
 			<convert type="ClockToText">Format:%e. %B</convert>
 		</widget>
 		<ePixmap pixmap="MetrixHD_MOD/icons/ico_hd_off.png" position="1159,688" size="41,20" zPosition="1" alphatest="blend" />
@@ -267,8 +267,8 @@
 		<widget source="ServiceEvent" render="Progress" pixmap="MetrixHD_MOD/p_bar.png" position="865,95" size="280,5" transparent="1" zPosition="1">
 			<convert type="EventTime">Progress</convert>
 		</widget>
-		<ePixmap pixmap="MetrixHD_MOD/buttons-light/key_menu.png" position="639,635" size="81,40" alphatest="blend" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons-light/key_info2.png" position="549,635" size="81,40" alphatest="blend" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons-light/key_menu.png" position="639,635" size="81,40" alphatest="on" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons-light/key_info2.png" position="549,635" size="81,40" alphatest="on" />
 		<ePixmap pixmap="MetrixHD_MOD/buttons/key_red.png" position="17,635" size="30,40" alphatest="blend" />
 		<ePixmap pixmap="MetrixHD_MOD/buttons/key_green.png" position="137,635" size="30,40" alphatest="blend" />
 		<ePixmap pixmap="MetrixHD_MOD/buttons/key_yellow.png" position="272,635" size="30,40" alphatest="blend" />
@@ -289,7 +289,7 @@
 		<widget source="ServiceEvent" render="Label" position="760,118" size="490,322" font="Regular; 20" backgroundColor="background20" transparent="1" valign="top">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
-<!-- ExtendedDescription */ --></screen><!-- ### epgselection-default START -->
+<!-- ExtendedDescription */ --></screen><!-- /* EPGSelection-default -->
 	<screen name="EPGSelection" position="0,0" size="1280,720" title="EPG Selection" flags="wfNoBorder" backgroundColor="background90">
 		<eLabel name="new eLabel" position="40,25" zPosition="-10" size="1205,650" backgroundColor="background20" transparent="0" />
 		<widget source="global.CurrentTime" render="Label" position="1120,37" size="100,28" font="Regular;26" halign="right" backgroundColor="background20" transparent="1">
@@ -299,11 +299,11 @@
 			<convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
 		</widget>
 		<eLabel text="EPG Selection" position="70,47" size="800,43" font="Regular; 35" backgroundColor="background20" transparent="1" />
-		<widget source="Service" render="Label" position="70,105" size="700,38" font="Regular; 24" backgroundColor="background" transparent="1">
+		<widget source="Service" render="Label" position="70,105" size="700,38" font="Regular; 30" backgroundColor="background" transparent="1" valign="top">
 			<convert type="ServiceName">Name</convert>
 		</widget>
-		<widget name="list" position="70,160" size="700,450" zPosition="3" itemHeight="30" scrollbarMode="showOnDemand" backgroundColor="background20" transparent="1" />
-		<widget source="Event" render="Label" position="795,153" size="430,461" font="RegularLight; 20" backgroundColor="background20" transparent="1" valign="top">
+		<widget name="list" position="70,153" size="700,450" zPosition="3" itemHeight="30" scrollbarMode="showOnDemand" backgroundColor="background20" transparent="1" />
+		<widget source="Event" render="Label" position="795,153" size="430,461" font="Regular; 22" backgroundColor="background20" transparent="1" valign="top">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
 		<ePixmap pixmap="MetrixHD_MOD/buttons/key_red.png" position="70,635" size="30,40" alphatest="blend" />
@@ -314,11 +314,11 @@
 		<widget name="key_green" position="287,637" size="160,25" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" transparent="1" />
 		<widget name="key_yellow" position="475,637" size="160,25" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" transparent="1" />
 		<widget name="key_blue" position="675,637" size="160,25" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" transparent="1" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons-light/key_menu.png" position="1140,635" size="81,40" zPosition="10" alphatest="blend" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons-light/key_info2.png" position="1040,635" size="81,40" zPosition="10" alphatest="blend" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons-light/key_menu.png" position="1140,635" size="81,40" zPosition="10" alphatest="on" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons-light/key_info2.png" position="1040,635" size="81,40" zPosition="10" alphatest="on" />
 	</screen>
-<!-- ### epgselection-default END -->
-<!-- ### main START -->
+<!-- EPGSelection-default */ -->
+<!-- /* Main -->
 	<screen name="InfoBarLite" position="0,0" size="1280,720" title="InfoBar" backgroundColor="transparent2" flags="wfNoBorder">
 		<eLabel name="new eLabel" position="0,550" zPosition="-2" size="1280,170" backgroundColor="background20" transparent="0" />
 		<eLabel name="new eLabel" position="913,40" zPosition="-1" size="320,70" backgroundColor="background20" transparent="0" />
@@ -1278,7 +1278,7 @@
 			<convert type="EMCServiceTime">StartTime</convert>
 			<convert type="EMCClockToText">Date</convert>
 		</widget>
-		<ePixmap name="new ePixmap" position="1125,630" size="81,40" pixmap="MetrixHD_MOD/buttons-light/key_menu.png" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons-light/key_menu.png" position="1125,630" size="81,40" alphatest="on" />
 		<ePixmap pixmap="MetrixHD_MOD/buttons/key_red.png" position="415,630" size="30,40" alphatest="blend" />
 		<ePixmap pixmap="MetrixHD_MOD/buttons/key_green.png" position="597,630" size="30,40" alphatest="blend" />
 		<ePixmap pixmap="MetrixHD_MOD/buttons/key_yellow.png" position="771,630" size="30,40" alphatest="blend" />
@@ -1433,8 +1433,8 @@
 		<widget name="key_green" position="290,487" size="150,22" zPosition="1" font="RegularLight;20" halign="left" backgroundColor="background20" transparent="1" />
 		<widget name="key_yellow" position="475,487" size="150,22" zPosition="1" font="RegularLight;20" halign="left" backgroundColor="background20" transparent="1" />
 		<widget name="key_blue" position="660,487" size="140,22" zPosition="1" font="RegularLight;20" halign="left" backgroundColor="background20" transparent="1" />
-		<ePixmap position="1135,485" size="81,40" zPosition="10" pixmap="MetrixHD_MOD/buttons-light/key_menu.png" transparent="1" alphatest="blend" />
-		<ePixmap position="1020,485" size="81,40" zPosition="10" pixmap="MetrixHD_MOD/buttons-light/key_info2.png" transparent="1" alphatest="blend" />
+		<ePixmap position="1135,485" size="81,40" zPosition="10" pixmap="MetrixHD_MOD/buttons-light/key_menu.png" transparent="1" alphatest="on" />
+		<ePixmap position="1020,485" size="81,40" zPosition="10" pixmap="MetrixHD_MOD/buttons-light/key_info2.png" transparent="1" alphatest="on" />
 	</screen>
 	<screen name="ChoiceBox" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="background90">
 		<eLabel name="new eLabel" position="40,25" zPosition="-10" size="1205,650" backgroundColor="background20" transparent="0" />
@@ -1446,7 +1446,7 @@
 		</widget>
 		<widget name="text" position="800,121" size="430,148" font="Regular;22" halign="center" transparent="1" />
 		<widget name="list" position="70,121" size="700,495" itemHeight="35" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background20" transparent="1" />
-		<ePixmap position="990,635" size="81,40" zPosition="10" pixmap="MetrixHD_MOD/buttons-light/key_menu.png" transparent="1" alphatest="blend" />
+		<ePixmap position="990,635" size="81,40" zPosition="10" pixmap="MetrixHD_MOD/buttons-light/key_menu.png" transparent="1" alphatest="on" />
 		<ePixmap position="900,310" size="256,256" zPosition="2" pixmap="MetrixHD_MOD/icons/softupdate.png" transparent="1" />
 	</screen>
 	<screen name="Console" position="0,0" size="1280,720" title="Command execution..." flags="wfNoBorder" backgroundColor="background90">
@@ -1796,7 +1796,7 @@
 		<widget name="key_green" position="285,637" size="160,25" zPosition="1" font="RegularLight;20 " halign="left" backgroundColor="background20" transparent="1" />
 		<widget name="key_yellow" position="475,637" size="160,25" zPosition="1" font="RegularLight;20 " halign="left" backgroundColor="background20" transparent="1" />
 		<widget name="key_blue" position="665,637" size="160,25" zPosition="1" font="RegularLight;20 " halign="left" backgroundColor="background20" transparent="1" />
-		<ePixmap position="1140,635" size="81,40" zPosition="10" pixmap="MetrixHD_MOD/buttons-light/key_menu.png" transparent="1" alphatest="blend" />
+		<ePixmap position="1140,635" size="81,40" zPosition="10" pixmap="MetrixHD_MOD/buttons-light/key_menu.png" transparent="1" alphatest="on" />
 	</screen>
 	<screen name="GraphMultiEPG" position="0,0" size="1280,720" title="Electronic Program Guide" flags="wfNoBorder" backgroundColor="background90">
 		<eLabel name="new eLabel" position="40,25" zPosition="-10" size="1205,650" backgroundColor="background20" transparent="0" />
@@ -1838,7 +1838,7 @@
 		<ePixmap pixmap="MetrixHD_MOD/buttons/key_green.png" position="265,635" size="30,40" alphatest="blend" />
 		<widget name="key_red" position="105,637" size="160,25" zPosition="1" font="Regular;22" halign="left" backgroundColor="black" transparent="1" />
 		<widget name="key_green" position="300,637" size="160,25" zPosition="1" font="Regular;22" halign="left" backgroundColor="black" transparent="1" />
-		<ePixmap position="1140,635" size="81,40" zPosition="10" pixmap="MetrixHD_MOD/buttons-light/key_menu.png" transparent="1" alphatest="blend" />
+		<ePixmap position="1140,635" size="81,40" zPosition="10" pixmap="MetrixHD_MOD/buttons-light/key_menu.png" transparent="1" alphatest="on" />
 	</screen>
 	<screen name="GraphicalEPG" position="0,0" size="1280,720" title="Electronic Program Guide" flags="wfNoBorder" backgroundColor="background90">
 		<eLabel name="new eLabel" position="40,25" zPosition="-10" size="1205,650" backgroundColor="background20" transparent="0" />
@@ -1882,7 +1882,7 @@
 		<widget name="key_green" position="300,637" size="160,25" zPosition="1" font="RegularLight;20" halign="left" backgroundColor="background20" transparent="1" />
 		<widget name="key_yellow" position="495,637" size="160,25" zPosition="1" font="RegularLight;20" halign="left" backgroundColor="background20" transparent="1" />
 		<widget name="key_blue" position="690,637" size="160,25" zPosition="1" font="RegularLight;20" halign="left" backgroundColor="background20" transparent="1" />
-		<ePixmap position="1140,635" size="81,40" zPosition="10" pixmap="MetrixHD_MOD/buttons-light/key_menu.png" transparent="1" alphatest="blend" />
+		<ePixmap position="1140,635" size="81,40" zPosition="10" pixmap="MetrixHD_MOD/buttons-light/key_menu.png" transparent="1" alphatest="on" />
 	</screen>
 	<screen name="GraphicalEPGPIG" position="0,0" size="1280,720" title="Electronic Program Guide" flags="wfNoBorder" backgroundColor="background90">
 		<eLabel name="new eLabel" position="40,25" zPosition="-10" size="1205,650" backgroundColor="background20" transparent="0" />
@@ -1926,7 +1926,7 @@
 		<widget name="key_green" position="300,637" size="160,25" zPosition="1" font="RegularLight;20" halign="left" backgroundColor="background20" transparent="1" />
 		<widget name="key_yellow" position="495,637" size="160,25" zPosition="1" font="RegularLight;20" halign="left" backgroundColor="background20" transparent="1" />
 		<widget name="key_blue" position="690,637" size="160,25" zPosition="1" font="RegularLight;20" halign="left" backgroundColor="background20" transparent="1" />
-		<ePixmap position="1140,635" size="81,40" zPosition="10" pixmap="MetrixHD_MOD/buttons-light/key_menu.png" transparent="1" alphatest="blend" />
+		<ePixmap position="1140,635" size="81,40" zPosition="10" pixmap="MetrixHD_MOD/buttons-light/key_menu.png" transparent="1" alphatest="on" />
 	</screen>
 	<screen name="MovieEpgSetup" position="0,0" size="1280,720" title="MovieEpg Setup" flags="wfNoBorder" backgroundColor="background90">
 		<eLabel name="new eLabel" position="40,25" zPosition="-10" size="1205,650" backgroundColor="background20" transparent="0" />
@@ -1984,8 +1984,8 @@
 		<widget name="key_green" position="290,189" size="220,26" backgroundColor="background20" transparent="1" zPosition="1" font="RegularLight;20" halign="left" />
 		<widget name="key_yellow" position="539,189" size="220,26" backgroundColor="background20" transparent="1" zPosition="1" font="RegularLight;20" halign="left" />
 		<widget name="key_blue" position="785,189" size="220,26" backgroundColor="background20" transparent="1" zPosition="1" font="RegularLight;20" halign="left" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons-light/key_menu.png" alphatest="blend" position="1075,181" size="81,40" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons-light/key_info2.png" alphatest="blend" position="1180,181" size="81,40" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons-light/key_menu.png" alphatest="on" position="1075,181" size="81,40" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons-light/key_info2.png" alphatest="on" position="1180,181" size="81,40" />
 	</screen>
 	<screen name="InfoBarEventView" position="0,0" size="1280,499" backgroundColor="transparent" flags="wfNoBorder" zPosition="1">
 		<eLabel name="new eLabel" position="30,30" zPosition="-10" size="1220,440" backgroundColor="background20" transparent="0" />
@@ -2144,7 +2144,7 @@
 		<widget source="session.CurrentService" render="Progress" pixmap="MetrixHD_MOD/colors/00ffffff.png" position="71,410" size="300,5" zPosition="1" transparent="1">
 			<convert type="ServicePosition">Position</convert>
 		</widget>
-		<ePixmap position="1130,631" size="81,40" zPosition="10" pixmap="MetrixHD_MOD/buttons-light/key_menu.png" transparent="1" alphatest="blend" />
+		<ePixmap position="1130,631" size="81,40" zPosition="10" pixmap="MetrixHD_MOD/buttons-light/key_menu.png" transparent="1" alphatest="on" />
 		<widget source="global.CurrentTime" render="Label" position="209,602" size="201,65" font="Regular; 55" halign="left" backgroundColor="background20" transparent="1" valign="top">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -2326,7 +2326,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget source="Service" render="Label" position="64,158" size="317,372" font="Regular;19" foregroundColor="grey" backgroundColor="background20" transparent="1" valign="top">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
-		<ePixmap name="new ePixmap" position="1125,630" size="81,40" pixmap="MetrixHD_MOD/buttons-light/key_menu.png" />
+		<ePixmap name="new ePixmap" position="1125,630" size="81,40" pixmap="MetrixHD_MOD/buttons-light/key_menu.png" alphatest="on" />
 		<ePixmap pixmap="MetrixHD_MOD/buttons/key_red.png" position="415,630" size="30,40" alphatest="blend" />
 		<ePixmap pixmap="MetrixHD_MOD/buttons/key_green.png" position="597,630" size="30,40" alphatest="blend" />
 		<ePixmap pixmap="MetrixHD_MOD/buttons/key_yellow.png" position="771,630" size="30,40" alphatest="blend" />
@@ -3820,9 +3820,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget name="key_yellow" position="455,637" size="160,25" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" transparent="1" />
 		<widget name="key_blue" position="665,637" size="160,25" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" transparent="1" />
 		<ePixmap position="840,635" size="30,30" zPosition="10" pixmap="MetrixHD_MOD/buttons/key_left.png" transparent="1" alphatest="blend" />
-		<ePixmap position="895,635" size="81,40" zPosition="10" pixmap="MetrixHD_MOD/buttons-light/key_menu.png" transparent="1" alphatest="blend" />
-		<ePixmap position="1000,635" size="30,30" zPosition="10" pixmap="MetrixHD_MOD/buttons/key_right.png" transparent="1" alphatest="blend" />
-		<ePixmap position="1080,635" size="30,30" zPosition="10" pixmap="MetrixHD_MOD/buttons/key_info.png" transparent="1" alphatest="blend" />
+		<ePixmap position="895,635" size="81,40" zPosition="10" pixmap="MetrixHD_MOD/buttons-light/key_menu.png" transparent="1" alphatest="on" />
+		<ePixmap position="1000,635" size="30,30" zPosition="10" pixmap="MetrixHD_MOD/buttons/key_right.png" transparent="1" alphatest="on" />
+		<ePixmap position="1080,635" size="30,30" zPosition="10" pixmap="MetrixHD_MOD/buttons/key_info.png" transparent="1" alphatest="on" />
 		<ePixmap position="920,230" size="256,256" zPosition="2" pixmap="MetrixHD_MOD/icons/fritz.png" transparent="1" />
 	</screen>
 	<screen name="FritzDisplayCalls" position="0,0" size="1280,720" title="Fritz Display Calls" flags="wfNoBorder" backgroundColor="background90">
@@ -4243,7 +4243,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget position="285,637" size="180,25" zPosition="1" font="RegularLight; 22" halign="left" backgroundColor="background20" transparent="1" />
 		<widget name="key_yellow" position="475,637" size="180,25" zPosition="1" font="RegularLight; 22" halign="left" backgroundColor="background20" transparent="1" />
 		<eLabel text="Virtual KeyBoard" position="680,637" size="270,25" zPosition="1" font="RegularLight; 22" halign="left" backgroundColor="background20" transparent="1" />
-		<ePixmap position="1050,635" size="81,40" zPosition="10" pixmap="MetrixHD_MOD/buttons-light/key_menu.png" transparent="1" alphatest="blend" />
+		<ePixmap position="1050,635" size="81,40" zPosition="10" pixmap="MetrixHD_MOD/buttons-light/key_menu.png" transparent="1" alphatest="on" />
 		<ePixmap position="920,230" size="256,256" zPosition="2" pixmap="MetrixHD_MOD/icons/youtube.png" transparent="1" />
 		<widget name="VKeyIcon" position="0,0" size="0,0" />
 		<widget name="thumbnail" position="1006,495" size="100,75" alphatest="blend" />
@@ -6493,11 +6493,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
 		<widget source="Title" render="Label" position="center,41" size="400,30" font="Regular;23" foregroundColor="white" backgroundColor="background20" halign="center" transparent="1" />
-		<widget name="list" position="35,325" size="1210,326" itemHeight="29" zPosition="25" CoolFont="Regular;19" CoolServiceFont="Regular;19" CoolEventFont="Regular;19" CoolServiceSize="245" CoolEventSize="720" CoolServicePos="4" CoolServiceHPos="1" CoolEventPos="355" CoolEventHPos="1" CoolBarPos="240" CoolBarHPos="10" CoolBarSize="100" CoolBarHigh="10" CoolTimePos="265" CoolTimeHPos="2" CoolTimeSize="150" CoolDurationPos="1055" CoolDurationSize="100" CoolDurationColor="white" CoolServiceColor="white" CoolBarColor="white" CoolEventColor="white" CoolBackColorSel="metrixSelection" CoolRecPreColor="#f7c006" CoolRecColor="#e62711" CoolTunerCol="white" CoolCurrentCol="white" foregroundColor="white" backgroundColor="background20" transparent="1" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons/red.png" position="70,660" size="30,40" alphatest="blend" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons/green.png" position="380,660" size="30,40" alphatest="blend" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons/yellow.png" position="690,660" size="30,40" alphatest="blend" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons/blue.png" position="1000,660" size="30,40" alphatest="blend" />
+		<widget name="list" position="35,325" size="1210,326" itemHeight="29" zPosition="25" CoolFont="Regular;19" CoolServiceFont="Regular;19" CoolEventFont="Regular;19" CoolServiceSize="245" CoolEventSize="720" CoolServicePos="4" CoolServiceHPos="1" CoolEventPos="355" CoolEventHPos="1" CoolBarPos="240" CoolBarHPos="10" CoolBarSize="100" CoolBarHigh="10" CoolTimePos="265" CoolTimeHPos="2" CoolTimeSize="150" CoolDurationPos="1055" CoolDurationSize="100" CoolDurationColor="white" CoolServiceColor="white" CoolBarColor="white" CoolEventColor="white" CoolBackColorSel="metrixSelection" CoolRecPreColor="#108500" CoolRecColor="#e62711" CoolTunerCol="white" CoolCurrentCol="white" foregroundColor="white" backgroundColor="background20" transparent="1" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons/key_red.png" position="70,660" size="30,40" alphatest="blend" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons/key_green.png" position="380,660" size="30,40" alphatest="blend" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons/key_yellow.png" position="690,660" size="30,40" alphatest="blend" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons/key_blue.png" position="1000,660" size="30,40" alphatest="blend" />
 		<widget name="key_red" position="110,667" size="150,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" transparent="1" />
 		<widget name="key_green" position="420,667" size="150,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" transparent="1" />
 		<widget name="key_yellow" position="730,668" size="150,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" transparent="1" />
@@ -6537,11 +6537,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
 		<widget source="Title" render="Label" position="center,41" size="400,30" font="Regular;23" foregroundColor="white" backgroundColor="background20" halign="center" transparent="1" />
-		<widget name="list" position="35,325" size="1210,326" itemHeight="29" zPosition="25" CoolFont="Regular;19" CoolServiceFont="Regular;19" CoolEventFont="Regular;19" CoolServiceSize="245" CoolEventSize="720" CoolServicePos="4" CoolServiceHPos="1" CoolEventPos="355" CoolEventHPos="1" CoolBarPos="240" CoolBarHPos="10" CoolBarSize="100" CoolBarHigh="10" CoolTimePos="265" CoolTimeHPos="2" CoolTimeSize="150" CoolDurationPos="1055" CoolDurationSize="100" CoolDurationColor="white" CoolServiceColor="white" CoolBarColor="white" CoolEventColor="white" CoolBackColorSel="metrixSelection" CoolRecPreColor="#f7c006" CoolRecColor="#e62711" CoolTunerCol="white" CoolCurrentCol="white" foregroundColor="white" backgroundColor="background20" transparent="1" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons/red.png" position="70,660" size="30,40" alphatest="blend" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons/green.png" position="380,660" size="30,40" alphatest="blend" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons/yellow.png" position="690,660" size="30,40" alphatest="blend" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons/blue.png" position="1000,660" size="30,40" alphatest="blend" />
+		<widget name="list" position="35,325" size="1210,326" itemHeight="29" zPosition="25" CoolFont="Regular;19" CoolServiceFont="Regular;19" CoolEventFont="Regular;19" CoolServiceSize="245" CoolEventSize="720" CoolServicePos="4" CoolServiceHPos="1" CoolEventPos="355" CoolEventHPos="1" CoolBarPos="240" CoolBarHPos="10" CoolBarSize="100" CoolBarHigh="10" CoolTimePos="265" CoolTimeHPos="2" CoolTimeSize="150" CoolDurationPos="1055" CoolDurationSize="100" CoolDurationColor="white" CoolServiceColor="white" CoolBarColor="white" CoolEventColor="white" CoolBackColorSel="metrixSelection" CoolRecPreColor="#108500" CoolRecColor="#e62711" CoolTunerCol="white" CoolCurrentCol="white" foregroundColor="white" backgroundColor="background20" transparent="1" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons/key_red.png" position="70,660" size="30,40" alphatest="blend" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons/key_green.png" position="380,660" size="30,40" alphatest="blend" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons/key_yellow.png" position="690,660" size="30,40" alphatest="blend" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons/key_blue.png" position="1000,660" size="30,40" alphatest="blend" />
 		<widget name="key_red" position="110,667" size="150,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" transparent="1" />
 		<widget name="key_green" position="420,667" size="150,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" transparent="1" />
 		<widget name="key_yellow" position="730,668" size="150,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" transparent="1" />
@@ -6581,11 +6581,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
 		<widget source="Title" render="Label" position="center,41" size="400,30" font="Regular;23" foregroundColor="white" backgroundColor="background20" halign="center" transparent="1" />
-		<widget name="list" position="35,325" size="1210,326" itemHeight="29" zPosition="25" CoolFont="Regular;19" CoolServiceFont="Regular;19" CoolEventFont="Regular;19" CoolServiceSize="245" CoolEventSize="720" CoolServicePos="4" CoolServiceHPos="1" CoolEventPos="355" CoolEventHPos="1" CoolBarPos="240" CoolBarHPos="10" CoolBarSize="100" CoolBarHigh="10" CoolTimePos="265" CoolTimeHPos="2" CoolTimeSize="150" CoolDurationPos="1055" CoolDurationSize="100" CoolDurationColor="white" CoolServiceColor="white" CoolBarColor="white" CoolEventColor="white" CoolBackColorSel="metrixSelection" CoolRecPreColor="#f7c006" CoolRecColor="#e62711" CoolTunerCol="white" CoolCurrentCol="white" foregroundColor="white" backgroundColor="background20" transparent="1" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons/red.png" position="70,660" size="30,40" alphatest="blend" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons/green.png" position="380,660" size="30,40" alphatest="blend" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons/yellow.png" position="690,660" size="30,40" alphatest="blend" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons/blue.png" position="1000,660" size="30,40" alphatest="blend" />
+		<widget name="list" position="35,325" size="1210,326" itemHeight="29" zPosition="25" CoolFont="Regular;19" CoolServiceFont="Regular;19" CoolEventFont="Regular;19" CoolServiceSize="245" CoolEventSize="720" CoolServicePos="4" CoolServiceHPos="1" CoolEventPos="355" CoolEventHPos="1" CoolBarPos="240" CoolBarHPos="10" CoolBarSize="100" CoolBarHigh="10" CoolTimePos="265" CoolTimeHPos="2" CoolTimeSize="150" CoolDurationPos="1055" CoolDurationSize="100" CoolDurationColor="white" CoolServiceColor="white" CoolBarColor="white" CoolEventColor="white" CoolBackColorSel="metrixSelection" CoolRecPreColor="#108500" CoolRecColor="#e62711" CoolTunerCol="white" CoolCurrentCol="white" foregroundColor="white" backgroundColor="background20" transparent="1" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons/key_red.png" position="70,660" size="30,40" alphatest="blend" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons/key_green.png" position="380,660" size="30,40" alphatest="blend" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons/key_yellow.png" position="690,660" size="30,40" alphatest="blend" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons/key_blue.png" position="1000,660" size="30,40" alphatest="blend" />
 		<widget name="key_red" position="110,667" size="150,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" transparent="1" />
 		<widget name="key_green" position="420,667" size="150,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" transparent="1" />
 		<widget name="key_yellow" position="730,668" size="150,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" transparent="1" />
@@ -6625,10 +6625,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		</widget>
 		<eLabel text="Similar broadcasts:" position="214,114" size="240,30" font="Regular; 22" foregroundColor="white" backgroundColor="background20" transparent="1" valign="top" />
 		<widget name="CoolSimilar" position="214,149" size="1030,140" font="Regular; 20" foregroundColor="white" backgroundColor="background20" transparent="1" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons/red.png" position="70,660" size="30,40" alphatest="blend" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons/green.png" position="380,660" size="30,40" alphatest="blend" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons/yellow.png" position="690,660" size="30,40" alphatest="blend" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons/blue.png" position="1000,660" size="30,40" alphatest="blend" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons/key_red.png" position="70,660" size="30,40" alphatest="blend" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons/key_green.png" position="380,660" size="30,40" alphatest="blend" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons/key_yellow.png" position="690,660" size="30,40" alphatest="blend" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons/key_blue.png" position="1000,660" size="30,40" alphatest="blend" />
 		<widget name="key_red" position="110,667" size="150,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" transparent="1" />
 		<widget name="key_green" position="420,667" size="150,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" transparent="1" />
 		<widget name="key_yellow" position="730,668" size="150,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" transparent="1" />
@@ -6677,13 +6677,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget name="timeline4" position="20,160" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
 		<widget name="timeline5" position="20,160" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
 		<widget name="timeline_now" position="45,328" zPosition="2" size="19,315" pixmap="MetrixHD_MOD/timeline-now.png" alphatest="on" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons-light/zoomin.png" position="963,660" size="81,40" alphatest="blend" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons-light/zoomout.png" position="1155,660" size="81,40" alphatest="blend" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons-light/key_menu.png" position="1059,660" size="81,40" alphatest="blend" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons/red.png" position="70,660" size="30,40" alphatest="blend" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons/green.png" position="270,660" size="30,40" alphatest="blend" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons/yellow.png" position="470,660" size="30,40" alphatest="blend" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons/blue.png" position="670,660" size="30,40" alphatest="blend" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons-light/zoomin.png" position="963,660" size="81,40" alphatest="on" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons-light/zoomout.png" position="1155,660" size="81,40" alphatest="on" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons-light/key_menu.png" position="1059,660" size="81,40" alphatest="on" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons/key_red.png" position="70,660" size="30,40" alphatest="blend" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons/key_green.png" position="270,660" size="30,40" alphatest="blend" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons/key_yellow.png" position="470,660" size="30,40" alphatest="blend" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons/key_blue.png" position="670,660" size="30,40" alphatest="blend" />
 		<widget name="key_red" position="110,667" size="150,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" transparent="1" />
 		<widget name="key_green" position="310,667" size="150,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" transparent="1" />
 		<widget name="key_yellow" position="510,668" size="150,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" transparent="1" />
@@ -6732,13 +6732,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget name="timeline4" position="20,160" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
 		<widget name="timeline5" position="20,160" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
 		<widget name="timeline_now" position="45,328" zPosition="2" size="19,315" pixmap="MetrixHD_MOD/timeline-now.png" alphatest="on" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons-light/zoomin.png" position="963,660" size="81,40" alphatest="blend" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons-light/zoomout.png" position="1155,660" size="81,40" alphatest="blend" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons-light/key_menu.png" position="1059,660" size="81,40" alphatest="blend" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons/red.png" position="70,660" size="30,40" alphatest="blend" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons/green.png" position="270,660" size="30,40" alphatest="blend" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons/yellow.png" position="470,660" size="30,40" alphatest="blend" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons/blue.png" position="670,660" size="30,40" alphatest="blend" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons-light/zoomin.png" position="963,660" size="81,40" alphatest="on" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons-light/zoomout.png" position="1155,660" size="81,40" alphatest="on" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons-light/key_menu.png" position="1059,660" size="81,40" alphatest="on" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons/key_red.png" position="70,660" size="30,40" alphatest="blend" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons/key_green.png" position="270,660" size="30,40" alphatest="blend" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons/key_yellow.png" position="470,660" size="30,40" alphatest="blend" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons/key_blue.png" position="670,660" size="30,40" alphatest="blend" />
 		<widget name="key_red" position="110,667" size="150,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" transparent="1" />
 		<widget name="key_green" position="310,667" size="150,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" transparent="1" />
 		<widget name="key_yellow" position="510,668" size="150,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" transparent="1" />
@@ -6778,18 +6778,18 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
 		<widget source="Title" render="Label" position="center,41" size="400,30" font="Regular;23" foregroundColor="white" backgroundColor="background20" halign="center" transparent="1" />
-		<widget name="list" position="35,365" size="1210,280" itemHeight="28" zPosition="25" CoolFont="Regular;21" CoolEventFont="Regular;21" CoolDayPos="0" CoolDaySize="50" CoolTimePos="70" CoolTimeSize="70" CoolEventPos="150" CoolEventSize="1040" CoolDayColor="unffffff" CoolTimeColor="unffffff" CoolEventColor="unffffff" CoolRecPreColor="#f7c006" CoolRecColor="#e62711" CoolBackColor="background20" CoolBackColorSel="metrixSelection" foregroundColor="unffffff" backgroundColor="background20" transparent="1" />
+		<widget name="list" position="35,365" size="1210,280" itemHeight="28" zPosition="25" CoolFont="Regular;21" CoolEventFont="Regular;21" CoolDayPos="0" CoolDaySize="50" CoolTimePos="70" CoolTimeSize="70" CoolEventPos="150" CoolEventSize="1040" CoolDayColor="unffffff" CoolTimeColor="unffffff" CoolEventColor="unffffff" CoolRecPreColor="#108500" CoolRecColor="#e62711" CoolBackColor="background20" CoolBackColorSel="metrixSelection" foregroundColor="unffffff" backgroundColor="background20" transparent="1" />
 		<widget name="timeline0" position="20,160" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
 		<widget name="timeline1" position="20,160" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
 		<widget name="timeline2" position="20,160" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
 		<widget name="timeline3" position="20,160" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
 		<widget name="timeline4" position="20,160" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
 		<widget name="timeline5" position="20,160" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons-light/key_menu.png" position="1059,660" size="81,40" alphatest="blend" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons/red.png" position="70,660" size="30,40" alphatest="blend" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons/green.png" position="270,660" size="30,40" alphatest="blend" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons/yellow.png" position="470,660" size="30,40" alphatest="blend" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons/blue.png" position="670,660" size="30,40" alphatest="blend" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons-light/key_menu.png" position="1059,660" size="81,40" alphatest="on" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons/key_red.png" position="70,660" size="30,40" alphatest="blend" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons/key_green.png" position="270,660" size="30,40" alphatest="blend" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons/key_yellow.png" position="470,660" size="30,40" alphatest="blend" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons/key_blue.png" position="670,660" size="30,40" alphatest="blend" />
 		<widget name="key_red" position="110,667" size="150,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" transparent="1" />
 		<widget name="key_green" position="310,667" size="150,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" transparent="1" />
 		<widget name="key_yellow" position="510,668" size="150,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" transparent="1" />
@@ -6838,13 +6838,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget name="timeline4" position="20,160" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
 		<widget name="timeline5" position="20,160" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
 		<widget name="timeline_now" position="45,328" zPosition="2" size="19,315" pixmap="MetrixHD_MOD/timeline-now.png" alphatest="on" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons-light/zoomin.png" position="963,660" size="81,40" alphatest="blend" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons-light/zoomout.png" position="1155,660" size="81,40" alphatest="blend" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons-light/key_menu.png" position="1059,660" size="81,40" alphatest="blend" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons/red.png" position="70,660" size="30,40" alphatest="blend" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons/green.png" position="270,660" size="30,40" alphatest="blend" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons/yellow.png" position="470,660" size="30,40" alphatest="blend" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons/blue.png" position="670,660" size="30,40" alphatest="blend" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons-light/zoomin.png" position="963,660" size="81,40" alphatest="on" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons-light/zoomout.png" position="1155,660" size="81,40" alphatest="on" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons-light/key_menu.png" position="1059,660" size="81,40" alphatest="on" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons/key_red.png" position="70,660" size="30,40" alphatest="blend" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons/key_green.png" position="270,660" size="30,40" alphatest="blend" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons/key_yellow.png" position="470,660" size="30,40" alphatest="blend" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons/key_blue.png" position="670,660" size="30,40" alphatest="blend" />
 		<widget name="key_red" position="110,667" size="150,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" transparent="1" />
 		<widget name="key_green" position="310,667" size="150,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" transparent="1" />
 		<widget name="key_yellow" position="510,668" size="150,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" transparent="1" />
@@ -6893,13 +6893,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget name="timeline4" position="20,160" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
 		<widget name="timeline5" position="20,160" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
 		<widget name="timeline_now" position="45,328" zPosition="2" size="19,315" pixmap="MetrixHD_MOD/timeline-now.png" alphatest="on" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons-light/zoomin.png" position="963,660" size="81,40" alphatest="blend" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons-light/zoomout.png" position="1155,660" size="81,40" alphatest="blend" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons-light/key_menu.png" position="1059,660" size="81,40" alphatest="blend" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons/red.png" position="70,660" size="30,40" alphatest="blend" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons/green.png" position="270,660" size="30,40" alphatest="blend" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons/yellow.png" position="470,660" size="30,40" alphatest="blend" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons/blue.png" position="670,660" size="30,40" alphatest="blend" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons-light/zoomin.png" position="963,660" size="81,40" alphatest="on" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons-light/zoomout.png" position="1155,660" size="81,40" alphatest="on" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons-light/key_menu.png" position="1059,660" size="81,40" alphatest="on" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons/key_red.png" position="70,660" size="30,40" alphatest="blend" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons/key_green.png" position="270,660" size="30,40" alphatest="blend" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons/key_yellow.png" position="470,660" size="30,40" alphatest="blend" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons/key_blue.png" position="670,660" size="30,40" alphatest="blend" />
 		<widget name="key_red" position="110,667" size="150,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" transparent="1" />
 		<widget name="key_green" position="310,667" size="150,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" transparent="1" />
 		<widget name="key_yellow" position="510,668" size="150,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" transparent="1" />
@@ -7574,7 +7574,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<ePixmap pixmap="MetrixHD_MOD/buttons/key_green.png" position="270,565" zPosition="2" size="30,40" transparent="1" alphatest="blend" />
 		<ePixmap pixmap="MetrixHD_MOD/buttons/key_yellow.png" position="510,565" zPosition="2" size="30,40" transparent="1" alphatest="blend" />
 		<ePixmap pixmap="MetrixHD_MOD/buttons/key_blue.png" position="750,565" zPosition="2" size="30,40" transparent="1" alphatest="blend" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons-light/key_menu.png" position="994,565" zPosition="2" size="81,40" transparent="1" alphatest="blend" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons-light/key_menu.png" position="994,565" zPosition="2" size="81,40" transparent="1" alphatest="on" />
 	</screen>
 	<screen name="AudioSelection" title="Audio" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<eLabel name="new eLabel" position="332,102" zPosition="-10" size="616,515" backgroundColor="background20" transparent="0" />
@@ -7701,8 +7701,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<ePixmap pixmap="MetrixHD_MOD/buttons/key_red.png" position="20,640" size="30,40" alphatest="blend" />
 		<ePixmap pixmap="MetrixHD_MOD/buttons/key_green.png" position="290,640" size="30,40" alphatest="blend" />
 		<ePixmap pixmap="MetrixHD_MOD/buttons/key_blue.png" position="560,640" size="30,40" alphatest="blend" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons-light/key_menu.png" position="1096,640" size="81,40" alphatest="blend" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons-light/key_info2.png" position="1000,640" size="81,40" alphatest="blend" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons-light/key_menu.png" position="1096,640" size="81,40" alphatest="on" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons-light/key_info2.png" position="1000,640" size="81,40" alphatest="on" />
 		<eLabel text="Zap + Close" position="60,649" size="184,26" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" transparent="1" />
 		<eLabel text="Zap" position="600,649" size="184,26" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" transparent="1" />
 		<eLabel text="Timer" position="330,649" size="184,26" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" transparent="1" />
@@ -7737,8 +7737,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<ePixmap pixmap="MetrixHD_MOD/buttons/key_green.png" position="251,640" size="30,40" alphatest="blend" />
 		<ePixmap pixmap="MetrixHD_MOD/buttons/key_yellow.png" position="482,640" size="30,40" alphatest="blend" />
 		<ePixmap pixmap="MetrixHD_MOD/buttons/key_blue.png" position="713,640" size="30,40" alphatest="blend" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons-light/key_menu.png" position="1096,640" size="81,40" alphatest="blend" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons-light/key_info2.png" position="1000,640" size="81,40" alphatest="blend" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons-light/key_menu.png" position="1096,640" size="81,40" alphatest="on" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons-light/key_info2.png" position="1000,640" size="81,40" alphatest="on" />
 		<eLabel text="Zap" position="60,649" size="184,26" zPosition="1" font="RegularLight; 20" halign="left" foregroundColor="white" backgroundColor="background20" transparent="1" />
 		<eLabel text="Timer" position="291,649" size="184,26" zPosition="1" font="RegularLight; 20" halign="left" foregroundColor="white" backgroundColor="background20" transparent="1" />
 		<eLabel text="Primetime" position="522,649" size="184,26" zPosition="1" font="RegularLight; 20" halign="left" foregroundColor="white" backgroundColor="background20" transparent="1" />
@@ -7977,8 +7977,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<ePixmap pixmap="MetrixHD_MOD/buttons/key_red.png" position=" 70,635" size="30,40" alphatest="blend" />
 		<widget source="key_red" render="Label" position="105,637" size="240,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" transparent="1" />
 	</screen>
-<!-- ### main END -->
-<!-- ### main-custom-openatv START -->
+<!-- Main */ -->
+<!-- /* main-custom-openatv -->
 	<screen name="HddMount" position="0,0" size="1280,720" title="HddMount" flags="wfNoBorder" backgroundColor="background90">
 		<eLabel name="new eLabel" position="40,25" zPosition="-10" size="1205,650" backgroundColor="background20" transparent="0" />
 		<eLabel text="Mount Manager" position="70,47" size="800,43" font="Regular;35" backgroundColor="background20" transparent="1" />
@@ -8042,5 +8042,5 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<eLabel name="new eLabel" position="950,348" zPosition="-11" size="270,50" backgroundColor="background20" />
 		<eLabel name="new eLabel" position="950,423" zPosition="-11" size="270,157" backgroundColor="background20" />
 	</screen>
-<!-- ### main-custom-openatv END -->
+<!-- main-custom-openatv */ -->
 </skin>

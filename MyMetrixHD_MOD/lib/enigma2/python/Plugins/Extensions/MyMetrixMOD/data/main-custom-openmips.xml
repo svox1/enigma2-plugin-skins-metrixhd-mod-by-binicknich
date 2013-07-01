@@ -1,4 +1,4 @@
-<!-- ### main-custom-openmips START -->
+<!-- /* main-custom-openmips -->
 	<screen name="ExtraActionBox" position="0,0" size="1280,720" title="Extra Action Box" flags="wfNoBorder" backgroundColor="background90">
 		<eLabel name="new eLabel" position="40,25" zPosition="-10" size="1205,650" backgroundColor="background20" transparent="0" />
 		<ePixmap position="920,230" size="256,256" zPosition="2" pixmap="MetrixHD_MOD/icons/setup.png" transparent="1" />
@@ -166,5 +166,5 @@
 		<eLabel name="new eLabel" position="950,348" zPosition="-11" size="270,50" backgroundColor="background20" />
 		<eLabel name="new eLabel" position="950,423" zPosition="-11" size="270,157" backgroundColor="background20" />
 	</screen>
-<!-- ### main-custom-openmips END -->
+<!-- main-custom-openmips */ -->
 </skin>

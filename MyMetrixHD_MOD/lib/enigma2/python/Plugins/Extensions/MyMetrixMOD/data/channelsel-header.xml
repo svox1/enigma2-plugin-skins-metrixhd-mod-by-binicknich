@@ -21,8 +21,8 @@
 		<widget source="ServiceEvent" render="Progress" pixmap="MetrixHD_MOD/p_bar.png" position="865,95" size="280,5" transparent="1" zPosition="1">
 			<convert type="EventTime">Progress</convert>
 		</widget>
-		<ePixmap pixmap="MetrixHD_MOD/buttons-light/key_menu.png" position="639,635" size="81,40" alphatest="blend" />
-		<ePixmap pixmap="MetrixHD_MOD/buttons-light/key_info2.png" position="549,635" size="81,40" alphatest="blend" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons-light/key_menu.png" position="639,635" size="81,40" alphatest="on" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons-light/key_info2.png" position="549,635" size="81,40" alphatest="on" />
 		<ePixmap pixmap="MetrixHD_MOD/buttons/key_red.png" position="17,635" size="30,40" alphatest="blend" />
 		<ePixmap pixmap="MetrixHD_MOD/buttons/key_green.png" position="137,635" size="30,40" alphatest="blend" />
 		<ePixmap pixmap="MetrixHD_MOD/buttons/key_yellow.png" position="272,635" size="30,40" alphatest="blend" />
