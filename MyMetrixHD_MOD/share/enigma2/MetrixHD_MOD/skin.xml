@@ -28,7 +28,38 @@
 		<color name="metrixPreTrans" value="#ccffffff" />
 		<color name="metrixPreTrans2" value="#dfffffff" />
 		<color name="metrixPreTrans3" value="#bbffffff" />
-		<color name="metri" />
+		<color name="metrixPreTrans4" value="#80ffffff" />
+		<color name="metrixSelection" value="#00149baf" />
+		<color name="metrixYellow" value="#00ffff00" />
+		<color name="orange" value="#00f47d19" />
+		<color name="rds_text_bg" value="#00003258" />
+		<color name="red" value="#00f23d21" />
+		<color name="transparent" value="#ffffffff" />
+		<color name="transparent2" value="#ff000000" />
+		<color name="transpBlack" value="#80000000" />
+		<color name="transpWhite" value="#77ffffff" />
+		<color name="transpyellow" value="#33bab329" />
+		<color name="un18080911" value="#18080911" />
+		<color name="un444444" value="#00444444" />
+		<color name="un777777" value="#00777777" />
+		<color name="un800000" value="#00800000" />
+		<color name="un808080" value="#00808080" />
+		<color name="un808888" value="#00808888" />
+		<color name="unc6e0f3" value="#00c6e0f3" />
+		<color name="unc8eaff" value="#00c8eaff" />
+		<color name="undcaaaa" value="#00dcaaaa" />
+		<color name="undcdcdc" value="#00dcdcdc" />
+		<color name="undddddd" value="#00dddddd" />
+		<color name="unf0b400" value="#00f0b400" />
+		<color name="unfcc000" value="#00fcc000" />
+		<color name="unff0000" value="#00ff0000" />
+		<color name="unff000000" value="#ff000000" />
+		<color name="unffffff" value="#00ffffff" />
+		<color name="white" value="#00fefefe" />
+		<color name="yellow" value="#00e5b243" />
+	</colors>
+	<fonts>
+		<font filename="/usr/share/fonts/lcd.ttf" name="LCD" scale="100" />
 		<font filename="/usr/share/fonts/ae_AlMateen.ttf" name="Replacement" scale="100" replacement="1" />
 		<font filename="/usr/share/fonts/tuxtxt.ttf" name="Console" scale="100" />
 		<font filename="/usr/share/fonts/nmsbd.ttf" name="Arial" scale="100" />
@@ -91,38 +122,7 @@
 		<widget source="global.CurrentTime" render="Label" position="928,50" size="125,30" font="RegularLight; 20" halign="right" backgroundColor="background20" foregroundColor="grey" transparent="1">
 			<convert type="ClockToText">Format:%A</convert>
 		</widget>
-		<widget source="global.CurrentTime" renderxPreTrans4" value="#80ffffff" />
-		<color name="metrixSelection" value="#00149baf" />
-		<color name="metrixYellow" value="#00ffff00" />
-		<color name="orange" value="#00f47d19" />
-		<color name="rds_text_bg" value="#00003258" />
-		<color name="red" value="#00f23d21" />
-		<color name="transparent" value="#ffffffff" />
-		<color name="transparent2" value="#ff000000" />
-		<color name="transpBlack" value="#80000000" />
-		<color name="transpWhite" value="#77ffffff" />
-		<color name="transpyellow" value="#33bab329" />
-		<color name="un18080911" value="#18080911" />
-		<color name="un444444" value="#00444444" />
-		<color name="un777777" value="#00777777" />
-		<color name="un800000" value="#00800000" />
-		<color name="un808080" value="#00808080" />
-		<color name="un808888" value="#00808888" />
-		<color name="unc6e0f3" value="#00c6e0f3" />
-		<color name="unc8eaff" value="#00c8eaff" />
-		<color name="undcaaaa" value="#00dcaaaa" />
-		<color name="undcdcdc" value="#00dcdcdc" />
-		<color name="undddddd" value="#00dddddd" />
-		<color name="unf0b400" value="#00f0b400" />
-		<color name="unfcc000" value="#00fcc000" />
-		<color name="unff0000" value="#00ff0000" />
-		<color name="unff000000" value="#ff000000" />
-		<color name="unffffff" value="#00ffffff" />
-		<color name="white" value="#00fefefe" />
-		<color name="yellow" value="#00e5b243" />
-	</colors>
-	<fonts>
-		<font filename="/usr/share/fonts/lcd.ttf" name="LCD" scale="100="Label" position="913,75" size="140,29" font="RegularLight; 20" halign="right" backgroundColor="background20" foregroundColor="grey" transparent="1">
+		<widget source="global.CurrentTime" render="Label" position="913,75" size="140,29" font="RegularLight; 20" halign="right" backgroundColor="background20" foregroundColor="grey" transparent="1">
 			<convert type="ClockToText">Format:%e. %B</convert>
 		</widget>
 		<ePixmap pixmap="MetrixHD_MOD/icons/ico_hd_off.png" position="1159,688" size="41,20" zPosition="1" alphatest="blend" />
