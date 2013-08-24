@@ -3068,6 +3068,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<ePixmap pixmap="MetrixHD_MOD/buttons/key_green.png" position="360,635" size="30,40" alphatest="blend" />
 		<ePixmap pixmap="MetrixHD_MOD/buttons/key_yellow.png" position="650,635" size="30,40" alphatest="blend" />
 		<ePixmap pixmap="MetrixHD_MOD/buttons/key_blue.png" position="940,635" size="30,40" alphatest="blend" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons-light/key_menu.png" position="1159,635" size="81,40" zPosition="10" transparent="1" alphatest="on" />
 		<widget source="key_green" render="Label" position="395,637" size="240,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" transparent="1" />
 		<widget source="key_yellow" render="Label" position="685,637" size="240,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" transparent="1" />
 		<widget source="key_blue" render="Label" position="975,637" size="260,24" zPosition="1" font="RegularLight;20" halign="left" backgroundColor="background20" transparent="1" />
