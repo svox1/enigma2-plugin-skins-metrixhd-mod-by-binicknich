@@ -3440,6 +3440,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget source="key_green" render="Label" position="395,637" size="240,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" transparent="1" />
 		<widget source="key_yellow" render="Label" position="685,637" size="240,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" transparent="1" />
 		<widget source="key_blue" render="Label" position="975,637" size="260,24" zPosition="1" font="RegularLight;20" halign="left" backgroundColor="background20" transparent="1" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons-light/key_info2.png" position="1164,635" size="81,40" alphatest="on" />
 		<ePixmap position="920,230" size="256,256" zPosition="2" pixmap="MetrixHD_MOD/icons/setup.png" transparent="1" />
 	</screen>
 	<screen name="FilebrowserConfigScreen" position="0,0" size="1280,720" title="" flags="wfNoBorder" backgroundColor="background90">
@@ -5673,6 +5674,23 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget source="key_red" render="Label" position="105,637" size="240,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" transparent="1" />
 		<ePixmap position="920,230" size="256,256" zPosition="2" pixmap="MetrixHD_MOD/icons/net.png" transparent="1" alphatest="on" />
 	</screen>
+	<screen name="NetworkMacSetup" position="0,0" size="1280,720" title="MAC-adress Setup" backgroundColor="background90" flags="wfNoBorder">
+		<eLabel name="new eLabel" position="40,25" zPosition="-11" size="1205,650" backgroundColor="background20" transparent="0" />
+		<widget source="global.CurrentTime" render="Label" position="1120,37" size="100,28" font="Regular;26" halign="right" backgroundColor="background20" transparent="1">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="870,67" size="350,25" font="RegularLight; 20" halign="right" backgroundColor="background20" transparent="1">
+			<convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
+		</widget>
+		<eLabel text="MAC-adress Setup" position="70,47" size="800,43" font="Regular;35" backgroundColor="background90" transparent="1" />
+		<widget source="introduction" render="Label" position="70,520" size="650,25" font="Regular;22" halign="center" backgroundColor="black" transparent="1" />
+		<widget name="config" zPosition="2" position="70,120" size="710,455" scrollbarMode="showOnDemand" transparent="1" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons/key_red.png" position=" 70,635" size="30,40" alphatest="blend" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons/key_green.png" position="360,635" size="30,40" alphatest="blend" />
+		<widget source="key_red" render="Label" position="105,637" size="240,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" foregroundColor="white" transparent="1" />
+		<widget source="key_green" render="Label" position="395,637" size="240,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" foregroundColor="white" transparent="1" />
+		<ePixmap position="920,230" size="256,256" zPosition="2" pixmap="MetrixHD_MOD/icons/net.png" transparent="1" alphatest="on" />
+	</screen>
 	<screen name="NetworkMountsMenu" position="0,0" size="1280,720" title="Mounts Setup" backgroundColor="background90" flags="wfNoBorder">
 		<eLabel name="new eLabel" position="40,25" zPosition="-11" size="1205,650" backgroundColor="background20" transparent="0" />
 		<widget source="global.CurrentTime" render="Label" position="1120,37" size="100,28" font="Regular;26" halign="right" backgroundColor="background20" transparent="1">
@@ -7266,7 +7284,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget source="global.CurrentTime" render="Label" position="565,146" size="350,25" font="RegularLight; 20" halign="right" backgroundColor="background20" transparent="1">
 			<convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
 		</widget>
-		<widget name="config" position="415,196" size="500,150" scrollbarMode="showOnDemand" itemHeight="30" transparent="1" zPosition="3" />
+		<widget name="config" position="415,196" size="500,200" scrollbarMode="showOnDemand" itemHeight="30" transparent="1" zPosition="3" />
 		<widget source="key_red" render="Pixmap" pixmap="MetrixHD_MOD/buttons/key_red.png" position="365,196" size="35,27" alphatest="on">
 			<convert type="ConditionalShowHide" />
 		</widget>
@@ -7279,7 +7297,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget source="key_blue" render="Pixmap" pixmap="MetrixHD_MOD/buttons/key_blue.png" position="365,286" size="35,27" alphatest="on">
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="streams" render="Listbox" scrollbarMode="showOnDemand" position="365,361" size="550,200" zPosition="3" transparent="1">
+		<widget source="streams" render="Listbox" scrollbarMode="showOnDemand" position="365,400" size="550,200" zPosition="3" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"templates":
 					{"default": (25, [
@@ -7657,5 +7675,63 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget name="krkadoni_pix" position="920,350" size="70,22" />
 		<ePixmap pixmap="MetrixHD_MOD/buttons/key_red.png" position=" 70,635" size="30,40" alphatest="blend" />
 		<widget source="key_red" render="Label" position="105,637" size="240,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" transparent="1" />
+	</screen>
+	<screen name="FlashOnline" position="0,0" size="1280,720" title="Flash On the Fly" flags="wfNoBorder" backgroundColor="background90">
+		<eLabel name="new eLabel" position="40,25" zPosition="-10" size="1205,650" backgroundColor="background20" transparent="0" />
+		<widget source="Title" render="Label" font="Regular; 35" position="70,47" size="800,43" transparent="1" halign="left" valign="center" zPosition="1" foregroundColor="white" backgroundColor="background20" />
+		<ePixmap pixmap="MetrixHD_MOD/icons/softupdate.png" position="920,230" size="256,256" zPosition="2" transparent="1" />
+		<widget source="global.CurrentTime" render="Label" position="1120,37" size="100,28" font="Regular;26" halign="right" backgroundColor="background20" transparent="1">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="870,67" size="350,25" font="RegularLight; 20" halign="right" backgroundColor="background20" transparent="1">
+			<convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
+		</widget>
+		<ePixmap pixmap="MetrixHD_MOD/buttons/key_red.png" position=" 70,635" size="30,40" alphatest="blend" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons/key_green.png" position="360,635" size="30,40" alphatest="blend" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons/key_yellow.png" position="650,635" size="30,40" alphatest="blend" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons/key_blue.png" position="940,635" size="30,40" alphatest="blend" />
+		<widget name="key_red" render="Label" position="105,637" size="240,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" transparent="1" />
+		<widget name="key_green" render="Label" position="395,637" size="240,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" transparent="1" />
+		<widget name="key_yellow" render="Label" position="685,637" size="240,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" transparent="1" />
+		<widget name="key_blue" render="Label" position="975,637" size="240,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" transparent="1" />
+		<widget name="info-online" position="70,127" zPosition="1" size="550,150" font="Regular; 22" halign="left" valign="top" transparent="1" backgroundColor="background20" foregroundColor="white" />
+		<widget name="info-local" position="70,301" zPosition="1" size="550,200" font="Regular; 22" halign="left" valign="top" transparent="1" backgroundColor="background20" foregroundColor="white" />
+	</screen>
+	<screen name="doFlashImage" position="0,0" size="1280,720" title="Flash On the fly (select a image)" flags="wfNoBorder" backgroundColor="background90">
+		<eLabel name="new eLabel" position="40,25" zPosition="-10" size="1205,650" backgroundColor="background20" transparent="0" />
+		<widget source="Title" render="Label" font="Regular; 35" position="70,47" size="800,43" transparent="1" halign="left" valign="center" zPosition="1" foregroundColor="white" backgroundColor="background20" />
+		<ePixmap pixmap="MetrixHD_MOD/icons/softupdate.png" position="920,230" size="256,256" zPosition="2" transparent="1" />
+		<widget source="global.CurrentTime" render="Label" position="1120,37" size="100,28" font="Regular;26" halign="right" backgroundColor="background20" transparent="1">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="870,67" size="350,25" font="RegularLight; 20" halign="right" backgroundColor="background20" transparent="1">
+			<convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
+		</widget>
+		<ePixmap pixmap="MetrixHD_MOD/buttons/key_red.png" position=" 70,635" size="30,40" alphatest="blend" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons/key_green.png" position="360,635" size="30,40" alphatest="blend" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons/key_yellow.png" position="650,635" size="30,40" alphatest="blend" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons/key_blue.png" position="940,635" size="30,40" alphatest="blend" />
+		<widget name="key_red" render="Label" position="105,637" size="240,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" transparent="1" />
+		<widget name="key_green" render="Label" position="395,637" size="240,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" transparent="1" />
+		<widget name="key_yellow" render="Label" position="685,637" size="240,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" transparent="1" />
+		<widget name="key_blue" render="Label" position="975,637" size="240,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" transparent="1" />
+		<widget name="imageList" position="80,150" zPosition="1" size="450,550" font="Regular;20" scrollbarMode="showOnDemand" transparent="1" />
+	</screen>
+	<screen name="DeviceBrowser" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="background90">
+		<eLabel name="new eLabel" position="40,25" zPosition="-10" size="1205,650" backgroundColor="background20" transparent="0" />
+		<widget source="Title" render="Label" font="Regular; 35" position="70,47" size="800,43" transparent="1" halign="left" valign="center" zPosition="1" foregroundColor="white" backgroundColor="background20" />
+		<ePixmap pixmap="MetrixHD_MOD/icons/softupdate.png" position="920,230" size="256,256" zPosition="2" transparent="1" />
+		<widget source="global.CurrentTime" render="Label" position="1120,37" size="100,28" font="Regular;26" halign="right" backgroundColor="background20" transparent="1">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="870,67" size="350,25" font="RegularLight; 20" halign="right" backgroundColor="background20" transparent="1">
+			<convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
+		</widget>
+		<ePixmap pixmap="MetrixHD_MOD/buttons/key_red.png" position=" 70,635" size="30,40" alphatest="blend" />
+		<ePixmap pixmap="MetrixHD_MOD/buttons/key_green.png" position="360,635" size="30,40" alphatest="blend" />
+		<widget source="key_red" render="Label" position="105,637" size="240,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" foregroundColor="white" transparent="1" />
+		<widget source="key_green" render="Label" position="395,637" size="240,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" foregroundColor="white" transparent="1" />
+		<widget source="message" render="Label" position="80,50" size="510,150" font="RegularLight; 20" backgroundColor="background20" foregroundColor="white" transparent="1" />
+		<widget name="filelist" position="80,250" size="510,350" scrollbarMode="showOnDemand" />
 	</screen>
 <!-- Main */ -->
