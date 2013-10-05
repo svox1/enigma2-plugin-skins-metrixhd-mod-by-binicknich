@@ -5197,7 +5197,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 			<convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
 		</widget>
 		<eLabel text="Install Softcams" position="70,47" size="800,43" font="Regular;35" backgroundColor="background20" transparent="1" />
-		<widget source="list" render="Listbox" position="70,120" size="700,450" scrollbarMode="showOnDemand" selectionPixmap="MetrixHD_MOD/p_bar.png" transparent="1" backgroundColorSelected="background20" foregroundColorSelected="white">
+		<widget source="list" render="Listbox" position="70,120" size="700,475" scrollbarMode="showOnDemand" transparent="1" EntryBorderColor="grey" EntryBackgroundColor="#2f4974" EntryBackgroundColorSelected="#688cbf">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryPixmapAlphaTest(pos = (18, 5), size = (48, 48), png = 4), # index 4 is the status pixmap
