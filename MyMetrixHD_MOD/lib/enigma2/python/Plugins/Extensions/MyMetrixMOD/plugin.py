@@ -71,27 +71,31 @@ config.plugins.MyMetrixMOD.Image = ConfigSelection(default="main-custom-openatv"
 				("main-custom-openatv", _("openATV")),
 				("main-custom-openmips", _("openMips"))
 				])
-config.plugins.MyMetrixMOD.SkinColor = ConfigSelection(default="#00149baf", choices = [
-				("#00F0A30A", _("Amber")),
-				("#00825A2C", _("Brown")),
-				("#000050EF", _("Cobalt")),
-				("#00911d10", _("Crimson")),
-				("#001BA1E2", _("Cyan")),
-				("#00a61d4d", _("Magenta")),
-				("#00A4C400", _("Lime")),
-				("#006A00FF", _("Indigo")),
-				("#0070ad11", _("Green")),
-				("#00008A00", _("Emerald")),
-				("#0076608A", _("Mauve")),
-				("#006D8764", _("Olive")),
-				("#00c3461b", _("Orange")),
-				("#00F472D0", _("Pink")),
-				("#00E51400", _("Red")),
-				("#007A3B3F", _("Sienna")),
-				("#00647687", _("Steel")),
-				("#00149baf", _("Teal")),
-				("#006c0aab", _("Violet")),
-				("#00bf9217", _("Yellow"))
+config.plugins.MyMetrixMOD.SkinColor = ConfigSelection(default="00149baf", choices = [
+				("00F0A30A", _("Amber")),
+				("00825A2C", _("Brown")),
+				("000050EF", _("Cobalt")),
+				("00911d10", _("Crimson")),
+				("001BA1E2", _("Cyan")),
+				("00a61d4d", _("Magenta")),
+				("00A4C400", _("Lime")),
+				("006A00FF", _("Indigo")),
+				("0070ad11", _("Green")),
+				("00008A00", _("Emerald")),
+				("0076608A", _("Mauve")),
+				("006D8764", _("Olive")),
+				("00c3461b", _("Orange")),
+				("00F472D0", _("Pink")),
+				("00E51400", _("Red")),
+				("007A3B3F", _("Sienna")),
+				("00647687", _("Steel")),
+				("00149baf", _("Teal")),
+				("006c0aab", _("Violet")),
+				("00bf9217", _("Yellow"))
+				])
+config.plugins.MyMetrixMOD.SkinColorProgress = ConfigSelection(default="skincolor-progess-none", choices = [
+				("skincolor-progess-color", _("On")),
+				("skincolor-progess-none", _("Off"))
 				])
 				#MetrixWeather
 config.plugins.MetrixWeather.refreshInterval = ConfigNumber(default=10)
@@ -189,6 +193,7 @@ class MyMetrixMOD(ConfigListScreen, Screen):
 		list = []
 		list.append(getConfigListEntry(_("MetrixImage"), config.plugins.MyMetrixMOD.Image))
 		list.append(getConfigListEntry(_("MetrixColor"), config.plugins.MyMetrixMOD.SkinColor))
+		list.append(getConfigListEntry(_("MetrixColor on Progressbar"), config.plugins.MyMetrixMOD.SkinColorProgress))
 		list.append(getConfigListEntry(_("----------------------------- MetrixWeather  --------------------------------"), ))
 		list.append(getConfigListEntry(_("MetrixWeather ID"), config.plugins.MetrixWeather.woeid))
 		list.append(getConfigListEntry(_("Unit"), config.plugins.MetrixWeather.tempUnit))
@@ -312,7 +317,14 @@ class MyMetrixMOD(ConfigListScreen, Screen):
 			xFile.close()
 			o = open(self.datei,"w")
 			for line in open(self.dateiTMP):
-				line = line.replace("#00149bae", config.plugins.MyMetrixMOD.SkinColor.value )
+				if config.plugins.MyMetrixMOD.SkinColorProgress.value =='skincolor-progess-color':
+					self.skincolorprogresscolor = config.plugins.MyMetrixMOD.SkinColor.value
+					self.pbar = ("p_bar_" + self.skincolorprogresscolor + ".png")
+					line = line.replace("p_bar.png", self.pbar )
+					self.skincolorprogresscolor2 = config.plugins.MyMetrixMOD.SkinColor.value
+					self.pbar2 = ("colors/" + self.skincolorprogresscolor2 + ".png")
+					line = line.replace("colors/00ffffff.png", self.pbar2 )
+				line = line.replace("00149bae", config.plugins.MyMetrixMOD.SkinColor.value )
 				line = line.replace("buttons-light", config.plugins.MyMetrixMOD.ButtonStyle.value )
 				o.write(line)
 			o.close()
