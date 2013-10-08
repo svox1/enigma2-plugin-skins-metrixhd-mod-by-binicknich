@@ -2691,15 +2691,15 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<ePixmap position="920,230" size="256,256" zPosition="2" pixmap="MetrixHD_MOD/icons/timer.png" transparent="1" />
 	</screen>
 	<screen name="TimeshiftState" position="center,300" zPosition="2" size="860,60" backgroundColor="background20" flags="wfNoBorder">
-		<widget name="state" position=" 10, 5" size="150,27" font="Regular;22" halign="center" backgroundColor="transpBlack" />
-		<widget source="session.CurrentService" render="Label" position="160, 5" size="150,27" font="Regular;22" halign="left" foregroundColor="white" backgroundColor="transpBlack">
+		<widget name="state" position=" 10, 5" size="150,27" font="Regular;22" halign="center" backgroundColor="background20" />
+		<widget source="session.CurrentService" render="Label" position="160, 5" size="150,27" font="Regular;22" halign="left" foregroundColor="white" backgroundColor="background20">
 			<convert type="ServicePosition">Remaining</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="650, 5" size=" 80,27" font="Regular;22" halign="right" foregroundColor="white" backgroundColor="transpBlack">
+		<widget source="session.CurrentService" render="Label" position="650, 5" size=" 80,27" font="Regular;22" halign="right" foregroundColor="white" backgroundColor="background20">
 			<convert type="ServicePosition">Position</convert>
 		</widget>
-		<eLabel text="/" position="740, 5" size=" 10,27" font="Regular;22" halign="center" foregroundColor="white" backgroundColor="transpBlack" />
-		<widget source="session.CurrentService" render="Label" position="760, 5" size=" 80,27" font="Regular;22" halign="left" foregroundColor="white" backgroundColor="transpBlack">
+		<eLabel text="/" position="740, 5" size=" 10,27" font="Regular;22" halign="center" foregroundColor="white" backgroundColor="background20" />
+		<widget source="session.CurrentService" render="Label" position="760, 5" size=" 80,27" font="Regular;22" halign="left" foregroundColor="white" backgroundColor="background20">
 			<convert type="ServicePosition">Length</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Progress" position="10,42" size="840,5" zPosition="5" transparent="1">
@@ -2708,15 +2708,15 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<eLabel name="new eLabel" position="10,44" size="840,1" backgroundColor="grey" foregroundColor="grey" zPosition="1" />
 	</screen>
 	<screen name="PTSTimeshiftState" position="center,300" zPosition="2" size="860,60" backgroundColor="background20" flags="wfNoBorder">
-		<widget name="state" position=" 10, 5" size="150,27" font="Regular;22" halign="center" backgroundColor="transpBlack" />
-		<widget source="session.CurrentService" render="Label" position="160, 5" size="150,27" font="Regular;22" halign="left" foregroundColor="white" backgroundColor="transpBlack">
+		<widget name="state" position=" 10, 5" size="150,27" font="Regular;22" halign="center" backgroundColor="background20" />
+		<widget source="session.CurrentService" render="Label" position="160, 5" size="150,27" font="Regular;22" halign="left" foregroundColor="white" backgroundColor="background20">
 			<convert type="ServicePosition">Remaining</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="650, 5" size=" 80,27" font="Regular;22" halign="right" foregroundColor="white" backgroundColor="transpBlack">
+		<widget source="session.CurrentService" render="Label" position="650, 5" size=" 80,27" font="Regular;22" halign="right" foregroundColor="white" backgroundColor="background20">
 			<convert type="ServicePosition">Position</convert>
 		</widget>
-		<eLabel text="/" position="740, 5" size=" 10,27" font="Regular;22" halign="center" foregroundColor="white" backgroundColor="transpBlack" />
-		<widget source="session.CurrentService" render="Label" position="760, 5" size=" 80,27" font="Regular;22" halign="left" foregroundColor="white" backgroundColor="transpBlack">
+		<eLabel text="/" position="740, 5" size=" 10,27" font="Regular;22" halign="center" foregroundColor="white" backgroundColor="background20" />
+		<widget source="session.CurrentService" render="Label" position="760, 5" size=" 80,27" font="Regular;22" halign="left" foregroundColor="white" backgroundColor="background20">
 			<convert type="ServicePosition">Length</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Progress" position="10,42" size="840,5" zPosition="5" transparent="1">
