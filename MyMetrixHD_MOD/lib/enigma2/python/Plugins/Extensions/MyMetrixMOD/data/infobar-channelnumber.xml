@@ -1,0 +1,5 @@
+<!--/* CHANNEL NUMBER -->
+		<widget source="session.CurrentService" render="Label" position="400,47" size="500,144" font="Block; 120" valign="top" halign="right" noWrap="1" backgroundColor="metrixPreTrans3" transparent="1" foregroundColor="metrixPreTrans3" zPosition="-80">
+			<convert type="MetrixExtendedServiceInfo">ServiceNumber</convert>
+		</widget>
+<!-- CHANNEL NUMBER */-->
