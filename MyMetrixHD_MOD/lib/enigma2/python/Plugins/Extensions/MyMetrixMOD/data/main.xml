@@ -7755,7 +7755,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget source="key_green" render="Label" position="395,637" size="240,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" transparent="1" />
 		<widget source="key_yellow" render="Label" position="685,637" size="240,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" transparent="1" />
 		<widget source="key_blue" render="Label" position="975,637" size="260,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" transparent="1" />
-		<ePixmap position="920,230" size="256,256" zPosition="2" pixmap="MetrixHD_MOD/icons/setup.png" transparent="1" />
+		<ePixmap position="920,230" size="256,256" zPosition="2" pixmap="MetrixHD_MOD/icons/dlnaserver.png" transparent="1" />
 	</screen>
 	<screen name="SelectDirectoryWindow" position="0,0" size="1280,720" title="Select Directory" flags="wfNoBorder" backgroundColor="background90">
 		<eLabel name="new eLabel" position="40,25" zPosition="-10" size="1205,650" backgroundColor="background20" transparent="0" />
@@ -7772,7 +7772,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<ePixmap pixmap="MetrixHD_MOD/buttons/key_green.png" position="360,635" size="30,40" alphatest="blend" />
 		<widget source="key_red" render="Label" position="105,637" size="240,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" transparent="1" />
 		<widget source="key_green" render="Label" position="395,637" size="240,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" transparent="1" />
-		<ePixmap position="920,230" size="256,256" zPosition="2" pixmap="MetrixHD_MOD/icons/setup.png" transparent="1" />
+		<ePixmap position="920,230" size="256,256" zPosition="2" pixmap="MetrixHD_MOD/icons/dlnaserver.png" transparent="1" />
 	</screen>
 	<screen name="DLNADeviceBrowser" position="0,0" size="1280,720" title="DLNA DeviceBrowser" flags="wfNoBorder" backgroundColor="background90">
 		<eLabel name="new eLabel" position="40,25" zPosition="-10" size="1205,650" backgroundColor="background20" transparent="0" />
@@ -7792,7 +7792,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget source="key_green" render="Label" position="395,637" size="240,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" transparent="1" />
 		<widget source="key_yellow" render="Label" position="685,637" size="240,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" transparent="1" />
 		<widget source="key_blue" render="Label" position="975,637" size="260,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" transparent="1" />
-		<ePixmap position="920,230" size="256,256" zPosition="2" pixmap="MetrixHD_MOD/icons/setup.png" transparent="1" />
+		<ePixmap position="920,230" size="256,256" zPosition="2" pixmap="MetrixHD_MOD/icons/dlnabrowser.png" transparent="1" />
 	</screen>
 	<screen name="DLNAFileBrowser" position="0,0" size="1280,720" title="DLNA FileBrowser" flags="wfNoBorder" backgroundColor="background90">
 		<eLabel name="new eLabel" position="40,25" zPosition="-10" size="1205,650" backgroundColor="background20" transparent="0" />
@@ -7813,7 +7813,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget source="key_green" render="Label" position="395,637" size="240,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" transparent="1" />
 		<widget source="key_yellow" render="Label" position="685,637" size="240,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" transparent="1" />
 		<widget source="key_blue" render="Label" position="975,637" size="260,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" transparent="1" />
-		<ePixmap position="920,230" size="256,256" zPosition="2" pixmap="MetrixHD_MOD/icons/setup.png" transparent="1" />
+		<ePixmap position="920,230" size="256,256" zPosition="2" pixmap="MetrixHD_MOD/icons/dlnabrowser.png" transparent="1" />
 	</screen>
 	<screen name="DLNAClientConfig" position="0,0" size="1280,720" title="DLNA Browser Settings" flags="wfNoBorder" backgroundColor="background90">
 		<eLabel name="new eLabel" position="40,25" zPosition="-10" size="1205,650" backgroundColor="background20" transparent="0" />
@@ -7829,6 +7829,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<ePixmap pixmap="MetrixHD_MOD/buttons/key_green.png" position="360,635" size="30,40" alphatest="blend" />
 		<widget source="key_red" render="Label" position="105,637" size="240,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" transparent="1" />
 		<widget source="key_green" render="Label" position="395,637" size="240,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="background20" transparent="1" />
-		<ePixmap position="920,230" size="256,256" zPosition="2" pixmap="MetrixHD_MOD/icons/setup.png" transparent="1" />
+		<ePixmap position="920,230" size="256,256" zPosition="2" pixmap="MetrixHD_MOD/icons/dlnabrowser.png" transparent="1" />
 	</screen>
 <!-- Main */ -->
