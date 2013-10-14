@@ -351,9 +351,9 @@
 		<widget name="ecmInfo" position="18,44" size="560,25" font="Regular;16" valign="center" noWrap="1" zPosition="3" halign="center" transparent="1" foregroundColor="white" />
 	</screen>
 	<screen name="Volume" position="49,39" size="322,72" title="Volume" backgroundColor="transparent2" zPosition="99" flags="wfNoBorder">
-		<ePixmap pixmap="MetrixHD_MOD/icons/volume.png" position="1,1" size="320,70" backgroundColor="background20" zPosition="100" transparent="0" />
+		<ePixmap pixmap="MetrixHD_MOD/icons/volume.png" position="1,1" size="320,70" backgroundColor="background20" zPosition="100" transparent="1" />
 		<eLabel position="70,36" size="170,1" backgroundColor="white" foregroundColor="white" zPosition="101" />
-		<widget name="Volume" pixmap="MetrixHD_MOD/volume.png" position="70,34" size="170,5" zPosition="101" transparent="0" />
+		<widget name="Volume" pixmap="MetrixHD_MOD/volume.png" position="70,34" size="170,5" zPosition="101" transparent="1" />
 		<widget render="MetrixVolumeText" source="global.CurrentTime" font="Regular; 40" position="244,4" size="75,60" backgroundColor="background90" halign="center" valign="center" foregroundColor="white" transparent="1" zPosition="101" />
 	</screen>
 	<screen name="Mute" position="49,39" size="72,72" title="Mute" flags="wfNoBorder" backgroundColor="transparent2">
