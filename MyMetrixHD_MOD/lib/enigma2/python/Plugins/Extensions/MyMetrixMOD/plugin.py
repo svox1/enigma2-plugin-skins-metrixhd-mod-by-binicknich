@@ -117,13 +117,11 @@ config.plugins.MyMetrixMOD.InfobarCryptInfo = ConfigSelection(default="infobar-c
 				("infobar-cryptinfo", _("On")),
 				("infobar-cryptinfo-none", _("Off"))
 				])
-config.plugins.MyMetrixMOD.InfobarShowChannelname = ConfigSelection(default="infobar-channelname", choices = [
-				("infobar-channelname", _("On")),
-				("infobar-channelname-none", _("Off"))
-				])
-config.plugins.MyMetrixMOD.InfobarShowChannelnumber = ConfigSelection(default="infobar-channelnumber-none", choices = [
-				("infobar-channelnumber", _("On")),
-				("infobar-channelnumber-none", _("Off"))
+config.plugins.MyMetrixMOD.InfobarShowChannelInfo = ConfigSelection(default="infobar-channelinfo-name", choices = [
+				("infobar-channelinfo-number", _("Channelnumber")),
+				("infobar-channelinfo-name", _("Channelname")),
+				("infobar-channelinfo-number-name", _("Channelnumber and name")),
+				("infobar-channelinfo-none", _("Off"))
 				])
 config.plugins.MyMetrixMOD.InfobarECMInfo = ConfigSelection(default="infobar-ecminfo-none", choices = [
 				("infobar-ecminfo", _("On")),
@@ -204,8 +202,7 @@ class MyMetrixMOD(ConfigListScreen, Screen):
 		list.append(getConfigListEntry(_("Refresh Interval (min)"), config.plugins.MetrixWeather.refreshInterval))
 		list.append(getConfigListEntry(_("-------------------------------- InfoBar ------------------------------------"), ))
 		list.append(getConfigListEntry(_("Weather Widget"), config.plugins.MyMetrixMOD.InfobarWeatherWidget))
-		list.append(getConfigListEntry(_("Channel name"), config.plugins.MyMetrixMOD.InfobarShowChannelname))
-		list.append(getConfigListEntry(_("Channel number"), config.plugins.MyMetrixMOD.InfobarShowChannelnumber))
+		list.append(getConfigListEntry(_("Channel info"), config.plugins.MyMetrixMOD.InfobarShowChannelInfo))
 		list.append(getConfigListEntry(_("Show resolution info"), config.plugins.MyMetrixMOD.InfobarResolutionInfo))
 		list.append(getConfigListEntry(_("Show crypt info"), config.plugins.MyMetrixMOD.InfobarCryptInfo))
 		list.append(getConfigListEntry(_("Show ECM info"), config.plugins.MyMetrixMOD.InfobarECMInfo))
@@ -282,10 +279,8 @@ class MyMetrixMOD(ConfigListScreen, Screen):
 			self.appendSkinFile(self.daten + "infobar-header.xml")
 			#WeatherWidget
 			self.appendSkinFile(self.daten + config.plugins.MyMetrixMOD.InfobarWeatherWidget.value + ".xml")
-			#ChannelName
-			self.appendSkinFile(self.daten + config.plugins.MyMetrixMOD.InfobarShowChannelname.value + ".xml")
-			#ChannelNumber
-			self.appendSkinFile(self.daten + config.plugins.MyMetrixMOD.InfobarShowChannelnumber.value + ".xml")
+			#ChannelInfo
+			self.appendSkinFile(self.daten + config.plugins.MyMetrixMOD.InfobarShowChannelInfo.value + ".xml")
 			#ResolutionInfo
 			self.appendSkinFile(self.daten + config.plugins.MyMetrixMOD.InfobarResolutionInfo.value + ".xml")
 			#CryptInfo
