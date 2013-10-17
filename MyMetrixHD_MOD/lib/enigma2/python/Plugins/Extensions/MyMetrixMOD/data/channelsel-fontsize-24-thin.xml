@@ -1,5 +1,0 @@
-<!-- /* ExtendedDescription -->
-		<widget source="ServiceEvent" render="Label" position="760,118" size="490,311" font="RegularLight; 24" backgroundColor="background20" transparent="1" valign="top">
-			<convert type="EventName">ExtendedDescription</convert>
-		</widget>
-<!-- ExtendedDescription */ -->
