@@ -2,7 +2,7 @@
 #
 #    MyMetrix
 #    Coded by iMaxxx (c) 2013
-#    MOD by BiNiCKNiCH & arn354
+#    MOD by BiNiCKNiCH & arn354 & svox
 #
 #
 #  This plugin is licensed under the Creative Commons
@@ -34,6 +34,7 @@ from Components.ConfigList import ConfigListScreen
 from Components.Label import Label
 from Components.Language import language
 from os import environ, listdir, remove, rename, system
+from shutil import move
 from skin import parseColor
 from Components.Pixmap import Pixmap
 from Components.Label import Label
@@ -60,6 +61,27 @@ def translateBlock(block):
 		if block.__contains__(x[0]):
 			block = block.replace(x[0], x[1])
 	return block
+
+#############################################################
+
+# key name is equal to "help image" file name (example MyMetrixHD_MOD/lib/enigma2/python/Plugins/Extensions/MyMetrixMOD/images/channelsel-fontsize-20-thin.jpg)
+channelselFontStyles = [
+			{"key":"channelsel-fontsize-20","font":"Regular; 20", "height":"322"},
+			{"key":"channelsel-fontsize-20-thin","font":"RegularLight; 20", "height":"322"},
+			{"key":"channelsel-fontsize-22","font":"Regular; 22", "height":"315"},
+			{"key":"channelsel-fontsize-22-thin","font":"RegularLight; 22", "height":"315"},
+			{"key":"channelsel-fontsize-24","font":"Regular; 24", "height":"311"},
+			{"key":"channelsel-fontsize-24-thin","font":"RegularLight; 24", "height":"311"}
+			]
+
+channelInfoFontSizes = [
+			{"key":"channelInfo-fontsize-140","font":"Block; 140","y":"420"},
+			{"key":"channelInfo-fontsize-120","font":"Block; 120","y":"437"},
+			{"key":"channelInfo-fontsize-100","font":"Block; 100","y":"455"},
+			{"key":"channelInfo-fontsize-80","font":"Block; 80","y":"474"},
+			{"key":"channelInfo-fontsize-60","font":"Block; 60","y":"493"},
+			{"key":"channelInfo-fontsize-40","font":"Block; 40","y":"511"}
+			]
 
 #############################################################
 
@@ -123,6 +145,14 @@ config.plugins.MyMetrixMOD.InfobarShowChannelInfo = ConfigSelection(default="inf
 				("infobar-channelinfo-number-name", _("Channelnumber and name")),
 				("infobar-channelinfo-none", _("Off"))
 				])
+config.plugins.MyMetrixMOD.InfobarChannelInfoFontsize = ConfigSelection(default="channelInfo-fontsize-120", choices = [
+				("channelInfo-fontsize-140", "140"),
+				("channelInfo-fontsize-120", "120"),
+				("channelInfo-fontsize-100", "100"),
+				("channelInfo-fontsize-80", "80"),
+				("channelInfo-fontsize-60", "60"),
+				("channelInfo-fontsize-40", "40"),
+				])
 config.plugins.MyMetrixMOD.InfobarECMInfo = ConfigSelection(default="infobar-ecminfo-none", choices = [
 				("infobar-ecminfo", _("On")),
 				("infobar-ecminfo-none", _("Off"))
@@ -185,7 +215,7 @@ class MyMetrixMOD(ConfigListScreen, Screen):
 		Screen.__init__(self, session)
 		self.session = session
 		self.datei = "/usr/share/enigma2/MetrixHD_MOD/skin.xml"
-		self.dateiTMP = "/usr/share/enigma2/MetrixHD_MOD/skin.xml.tmp"
+		self.dateiTMP = self.datei + ".tmp"
 		self.daten = "/usr/lib/enigma2/python/Plugins/Extensions/MyMetrixMOD/data/"
 		self.komponente = "/usr/lib/enigma2/python/Plugins/Extensions/MyMetrixMOD/comp/"
 		self.picPath = picPath
@@ -203,6 +233,7 @@ class MyMetrixMOD(ConfigListScreen, Screen):
 		list.append(getConfigListEntry(_("-------------------------------- InfoBar ------------------------------------"), ))
 		list.append(getConfigListEntry(_("Weather Widget"), config.plugins.MyMetrixMOD.InfobarWeatherWidget))
 		list.append(getConfigListEntry(_("Channel info"), config.plugins.MyMetrixMOD.InfobarShowChannelInfo))
+		list.append(getConfigListEntry(_("Channel info fontsize"), config.plugins.MyMetrixMOD.InfobarChannelInfoFontsize))
 		list.append(getConfigListEntry(_("Show resolution info"), config.plugins.MyMetrixMOD.InfobarResolutionInfo))
 		list.append(getConfigListEntry(_("Show crypt info"), config.plugins.MyMetrixMOD.InfobarCryptInfo))
 		list.append(getConfigListEntry(_("Show ECM info"), config.plugins.MyMetrixMOD.InfobarECMInfo))
@@ -219,7 +250,6 @@ class MyMetrixMOD(ConfigListScreen, Screen):
 		ConfigListScreen.__init__(self, list)
 		self["actions"] = ActionMap(["OkCancelActions","DirectionActions", "InputActions", "ColorActions"], {"left": self.keyLeft,"down": self.keyDown,"up": self.keyUp,"right": self.keyRight,"red": self.exit,"yellow": self.reboot, "blue": self.showInfo, "green": self.save,"cancel": self.exit}, -1)
 		self.onLayoutFinish.append(self.UpdatePicture)
-
 
 	def GetPicturePath(self):
 		try:
@@ -264,6 +294,18 @@ class MyMetrixMOD(ConfigListScreen, Screen):
 	def showInfo(self):
 		self.session.open(MessageBox, _("Information"), MessageBox.TYPE_INFO)
 
+	def getDataByKey(self, list, key):
+		for item in list:
+			if item["key"] == key:
+				return item
+		return list[0]
+
+	def getFontStyleData(self, key):
+		return self.getDataByKey(channelselFontStyles, key)
+
+	def getFontSizeData(self, key):
+		return self.getDataByKey(channelInfoFontSizes, key)
+
 	def save(self):
 		for x in self["config"].list:
 			if len(x) > 1:
@@ -272,6 +314,18 @@ class MyMetrixMOD(ConfigListScreen, Screen):
 					pass
 
 		try:
+			#global tag search and replace in all skin elements
+			self.skinSearchAndReplace = []
+			self.skinSearchAndReplace.append(["00149bae", config.plugins.MyMetrixMOD.SkinColor.value])
+			self.skinSearchAndReplace.append(["buttons-light", config.plugins.MyMetrixMOD.ButtonStyle.value])
+
+			if config.plugins.MyMetrixMOD.SkinColorProgress.value == 'skincolor-progess-color':
+				self.skincolorprogresscolor = config.plugins.MyMetrixMOD.SkinColor.value
+				self.pbar = ("p_bar_" + self.skincolorprogresscolor + ".png")
+				self.skinSearchAndReplace.append(["p_bar.png", self.pbar])
+				self.pbar2 = ("colors/" + self.skincolorprogresscolor + ".png")
+				self.skinSearchAndReplace.append(["colors/00ffffff.png", self.pbar2])
+
 			###Header XML
 			self.appendSkinFile(self.daten + "header.xml")
 
@@ -279,8 +333,11 @@ class MyMetrixMOD(ConfigListScreen, Screen):
 			self.appendSkinFile(self.daten + "infobar-header.xml")
 			#WeatherWidget
 			self.appendSkinFile(self.daten + config.plugins.MyMetrixMOD.InfobarWeatherWidget.value + ".xml")
+
 			#ChannelInfo
-			self.appendSkinFile(self.daten + config.plugins.MyMetrixMOD.InfobarShowChannelInfo.value + ".xml")
+			fontSizeData = self.getFontSizeData(config.plugins.MyMetrixMOD.InfobarChannelInfoFontsize.value)
+			self.appendSkinFile(self.daten + config.plugins.MyMetrixMOD.InfobarShowChannelInfo.value + ".xml", [["{font}", fontSizeData["font"]], ["{y}", fontSizeData["y"]]])
+
 			#ResolutionInfo
 			self.appendSkinFile(self.daten + config.plugins.MyMetrixMOD.InfobarResolutionInfo.value + ".xml")
 			#CryptInfo
@@ -298,8 +355,10 @@ class MyMetrixMOD(ConfigListScreen, Screen):
 
 			###ChannelSelection
 			self.appendSkinFile(self.daten + "channelsel-header.xml")
-			#FontSize
-			self.appendSkinFile(self.daten + config.plugins.MyMetrixMOD.ChannelSelectionFontSize.value + ".xml")
+
+			#FontStyle
+			fontStyleData = self.getFontStyleData(config.plugins.MyMetrixMOD.ChannelSelectionFontSize.value)
+			self.appendSkinFile(self.daten + "channelsel-fontsize.xml", [["{font}", fontStyleData["font"]], ["{height}", fontStyleData["height"]]])
 
 			#Footer
 			self.appendSkinFile(self.daten + "screen-footer.xml")
@@ -317,20 +376,10 @@ class MyMetrixMOD(ConfigListScreen, Screen):
 			for xx in self.skin_lines:
 				xFile.writelines(xx)
 			xFile.close()
-			o = open(self.datei,"w")
-			for line in open(self.dateiTMP):
-				if config.plugins.MyMetrixMOD.SkinColorProgress.value =='skincolor-progess-color':
-					self.skincolorprogresscolor = config.plugins.MyMetrixMOD.SkinColor.value
-					self.pbar = ("p_bar_" + self.skincolorprogresscolor + ".png")
-					line = line.replace("p_bar.png", self.pbar )
-					self.skincolorprogresscolor2 = config.plugins.MyMetrixMOD.SkinColor.value
-					self.pbar2 = ("colors/" + self.skincolorprogresscolor2 + ".png")
-					line = line.replace("colors/00ffffff.png", self.pbar2 )
-				line = line.replace("00149bae", config.plugins.MyMetrixMOD.SkinColor.value )
-				line = line.replace("buttons-light", config.plugins.MyMetrixMOD.ButtonStyle.value )
-				o.write(line)
-			o.close()
-			system('rm -rf ' + self.dateiTMP)
+
+			move(self.dateiTMP, self.datei)
+
+			#system('rm -rf ' + self.dateiTMP)
 		except:
 			self.session.open(MessageBox, _("Error creating Skin!"), MessageBox.TYPE_ERROR)
 
@@ -338,12 +387,31 @@ class MyMetrixMOD(ConfigListScreen, Screen):
 		restartbox = self.session.openWithCallback(self.restartGUI,MessageBox,_("GUI needs a restart to apply a new skin.\nDo you want to Restart the GUI now?"), MessageBox.TYPE_YESNO)
 		restartbox.setTitle(_("Restart GUI"))
 
-	def appendSkinFile(self,appendFileName):
+	def appendSkinFile(self, appendFileName, skinPartSearchAndReplace=None):
+		"""
+		add skin file to main skin content
+
+		appendFileName:
+		 xml skin-part to add
+
+		skinPartSearchAndReplace:
+		 (optional) a list of search and replace arrays. first element, search, second for replace
+		"""
 		skFile = open(appendFileName, "r")
 		file_lines = skFile.readlines()
 		skFile.close()
-		for x in file_lines:
-			self.skin_lines.append(x)
+
+		tmpSearchAndReplace = []
+
+		if skinPartSearchAndReplace is not None:
+			tmpSearchAndReplace = self.skinSearchAndReplace + skinPartSearchAndReplace
+		else:
+			tmpSearchAndReplace = self.skinSearchAndReplace
+
+		for skinLine in file_lines:
+			for item in tmpSearchAndReplace:
+				skinLine = skinLine.replace(item[0], item[1])
+			self.skin_lines.append(skinLine)
 
 	def restartGUI(self, answer):
 		if answer is True:
